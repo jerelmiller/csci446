@@ -8,7 +8,7 @@ class CartItem
   end
   
   def increment_quantity
-    @quantity = 1
+    @quantity += 1
   end
   
   def title
