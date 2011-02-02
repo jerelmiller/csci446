@@ -2,7 +2,7 @@ class StoreController < ApplicationController
   before_filter :find_cart, :except => :empty_cart
   
   def index
-	@products = Product.find_products_for_sale
+    @products = Product.find_products_for_sale
   end
   
   def add_to_cart
@@ -40,7 +40,7 @@ class StoreController < ApplicationController
 	  render :action => 'checkout'
 	end
   end
-  
+ 
 private
   
   def redirect_to_index(msg = nil)
