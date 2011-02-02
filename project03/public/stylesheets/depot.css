@@ -1,5 +1,13 @@
 /* Global styles */
 
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #F0F0F0;
+  font: bold smaller sans-serif;
+}
+
 h1 {
         font:  150% sans-serif;
         color: #226;
@@ -183,14 +191,6 @@ h1 {
 
 #store .entry form, #store .entry form div {
   display: inline;
-}
-
-#notice {
-  border: 2px solid red;
-  padding: 1em;
-  margin-bottom: 2em;
-  background-color: #F0F0F0;
-  font: bold smaller sans-serif;
 }
 
 /* Styles for the cart in the main page */
