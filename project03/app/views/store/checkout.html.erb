@@ -12,7 +12,7 @@
 	  </div>
 	  
 	  <div>
-	    <%= form.label :address, I18n.t('checkout.address' + ":" %>
+	    <%= form.label :address, I18n.t('checkout.address') + ":" %>
 		<%= form.text_area :address, :rows => 3, :cols => 40 %>
 	  </div>
 	  
@@ -22,7 +22,7 @@
       </div>
 	  
 	  <div>
-	    <%= form.label :pay_type, I18n.t('checkout.pay_type) + ":" %>
+	    <%= form.label :pay_type, I18n.t('checkout.pay_type') + ":" %>
 		<%=
 		  form.select :pay_type,
 					   Order::PAYMENT_TYPES,

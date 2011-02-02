@@ -2,7 +2,7 @@ class LineItemsController < ApplicationController
   # GET /line_items
   # GET /line_items.xml
   def index
-    @line_items = LineItem.all
+    @line_items = LineItem.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb

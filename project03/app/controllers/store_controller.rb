@@ -40,21 +40,20 @@ class StoreController < ApplicationController
 	  render :action => 'checkout'
 	end
   end
- 
-protected
-  def authorize
-  end
-  
   
 private
   
   def redirect_to_index(msg = nil)
-	flash[:notice] = msg
+	flash[:notice] = msg if msg
 	redirect_to :action => 'index'
   end
 	
   def find_cart
 	@cart = (session[:cart] ||= Cart.new)
+  end
+  
+protected
+  def authorize
   end
 
 end

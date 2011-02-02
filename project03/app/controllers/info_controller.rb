@@ -4,7 +4,7 @@ class InfoController < ApplicationController
 	@orders = @product.orders
 	respond_to do |format|
 	  format.html
-	  format.atom { render :layout => false }
+	  format.xml { render :layout => false }
 	end
   end
   

@@ -12,6 +12,14 @@ class ApplicationController < ActionController::Base
   # filter_parameter_logging :password
   
 protected
+  def authorize
+    unless User.find_by_id(session[:user_id])
+	  flash[:notice] = "Please log in"
+	  redirect_to :controller => 'admin', :action => 'login'
+	end
+  end
+
+
   
   def set_locale
     session[:locale] = params[:locale] if params[:locale]
@@ -26,14 +34,10 @@ protected
   
   rescue Exception => err
     logger.error err
-	flash.now[:notice] = session[:locale] = I18n.default_locale
+	flash.now[:notice] = "#{I18n.locale} translation not available"
+	
+	I18n.load_path -= [locale_path]
+	I18n.locale = session[:locale] = I18n.default_locale
   end
 end
 
-  def authorize
-    unless User.find_by_id(session[:user_id])
-	  flash[:notice] = "Please log in"
-	  redirect_to :controller => 'admin', :action => 'login'
-	end
-  end
-end

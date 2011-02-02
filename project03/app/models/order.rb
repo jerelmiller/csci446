@@ -10,6 +10,8 @@ class Order < ActiveRecord::Base
   validates_inclusion_of :pay_type, :in =>
     PAYMENT_TYPES.map {|disp, value| value}
 	
+  has_many :line_items
+	
   def add_line_items_from_cart(cart)
     cart.items.each do |item|
 	  li = LineItem.from_cart_item(item)
@@ -17,5 +19,5 @@ class Order < ActiveRecord::Base
 	end
   end
   
-  has_many :line_items
+  
 end

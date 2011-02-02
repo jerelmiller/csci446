@@ -12,8 +12,6 @@ es:
 	  questions: 	"Preguntas"
 	  news:		 	"Noticias"
 	  contact:   	"Contacto"
-
-  layout:
     cart:
 	  title:		"Carrito de la Compra"
 	  button:

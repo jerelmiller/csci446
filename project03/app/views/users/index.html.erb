@@ -5,7 +5,7 @@
     <th>Name</th>
   </tr>
 
-<% @users.each do |user| %>
+<% for user in @users %>
   <tr>
     <td><%=h user.name %></td>
     <td><%= link_to 'Show', user %></td>
