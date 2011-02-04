@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Life Figure-Outer Application</title>
+
+<style type="text/css">
+body {
+	background:#999;
+}
+
+.header {
+	background: #CCC;
+	border:thin;
+	border-style:solid;
+	height: 70px;
+	width: 1050px;
+	margin-left: 25px;
+}
+
+.footer {
+	background:#999;	
+}
+
+.header2 {
+	color:#666666;
+	position: relative;
+	top: 3px;
+	left: 10px;
+}
+
+.menubar {
+	background: black;
+	color: white;	
+	height: 35px;
+	width: 1050px;
+	margin-left: 25px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	border:thin;
+	border-style:solid;
+	border-color:#000;
+}
+
+.menubar td {
+	text-align:left;
+	font-size:16px;
+	vertical-align:middle;
+}
+
+a:hover {
+	color:#063;	
+}
+
+a {
+	color: white;
+	text-decoration:none;	
+}
+
+.content {
+	background:#FFF;
+	height: 235px;
+	width: 1050px;
+	margin-left: 25px;	
+	border:thin;
+	border-bottom-width:0px;
+	border-style:solid;
+}
+
+div {
+	font-family:Arial, Helvetica, sans-serif;	
+}
+
+.content tr {
+	height: 35px;	
+}
+
+.footer {
+	background:#F4F4FF;	
+	text-align:center;
+	width: 1050px;
+	height: 35px;
+	margin-left: 25px;
+	border: thin;
+	border-top-width:0px;
+	border-style:solid;
+}
+</style>
+
+<script type="text/javascript">
+function notEmpty(elem) 
+{
+	if(elem.value.length == 0)
+	{
+		alert("Surely you must feel something!");
+		elem.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+
+<body>
+<div>
+
+<div class="header">
+  <font style="position:relative; top: 5px; left: 10px; font-size:32px;"><b>The Magic Life Figure-Outer!</b></font> <br/>
+<font class="header2" style="font-size:13px;"><b>Figuring out your life for you, so you don't have to... </b></font>
+</div>
+
+<div class="menubar">
+<table width="700" height="35px" style="margin-left: 10px;">
+<tr>
+	<td width="12%" ><a href="">Home</a></td>
+    <td width="15%" ><a href="">Interests</a></td>
+    <td width="13%" ><a href="">Health</a></td>
+    <td width="16%" ><a href="">Academic</a></td>
+    <td width="21%" ><a href="">Professional</a></td>
+    <td width="11%" ><a href="">Fun</a></td>
+    <td width="12%" ><a href="">Evil</a></td>
+</tr>
+</table>
+</div>
+
+<div class="content">
+<table style="margin-top:5px; margin-left:10px;" width="1030px">
+<tr>
+	<td colspan="2" style="font-size:26px; margin-top:-5px;"><b>Lorem Ipsum Dolor Sit Amet.</b></td>
+    <td width="143"></td>
+    <td width="347" rowspan="2" style="padding-left:5px; background:#F4F4FF;"><font style="font-size:20px;"><b>Current Progress in Life</b></font><br/><br/>
+   <font style="font-size:15px; font-weight:bold"> Mediocre. You should really enjoy life more.</font><br/>&nbsp;</td>
+</tr>
+<tr>
+	<td width="215">How do you feel today?</td>
+	<td width="305"><form method="post"><input type="text" id='feelBox' /></td>
+<td height="30"></tr>
+<tr>
+	<td height="58" valign="top">How would you like to feel?
+    <br/>(choose all that apply)</td>
+    <td><select multiple="multiple" style="width:265px">
+    	<option>Comfortably Numb</option>
+        <option>Grumpy as poop, you jerk</option>
+        <option>Happy like I'm on controlled substances</option>
+        <option>Normal. Absolutely Normal.</option>
+    </select></td>
+</tr>
+<tr>
+<td height="65px"></td>
+<td><input type="button" value="Feel Me!" onclick="notEmpty(document.getElementById('feelBox'))"/></form></td>
+</tr>
+</table>
+</div>
+
+<div class="footer" >
+<font style="font-size:14px;"> <br style="font-size:7px"/>&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</font>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
