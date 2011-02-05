@@ -1,4 +1,13 @@
 <div class="container">
+	<div>
+		<div class="login-button">
+			<div>
+			<p>Already a User? <%= link_to 'Login', :controller => 'admin', :action => 'login' %></p>
+			</div>
+			<div>
+			<%= link_to 'Create New User', :controller => 'users', :action => 'new' %>
+		</div>
+		</div>
 	<div class="roundedcornr_box">
 		<div class="roundedcornr_top">
 			<div>
@@ -12,7 +21,8 @@
 			<div>
 			</div>
 		</div>
-	</div>
+`</div>
+</div>
 	
 	<div class="links-row">
 		<div class="email-link">
@@ -34,7 +44,12 @@
 	</div>
 
 	<div class="author">
-		<p>by <%= @article.author %>.</p>
+		<p>by <%= @article.author %>. 
+		<% if @article.edits ==1 %>
+			<%= @article.edits %> edit since <%= @article.created_at.strftime("%b. %d, %Y.") %></p>
+		<% else %>
+			<%= @article.edits %> edits since <%= @article.created_at.strftime("%b. %d, %Y.") %></p>
+		<% end %>
 	</div
 
 	<div class="article-body">

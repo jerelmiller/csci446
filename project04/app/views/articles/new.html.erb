@@ -1,15 +1,25 @@
 <div class="container">
-	<div class="roundedcornr_box">
-		<div class="roundedcornr_top">
+	<div>
+		<div class="login-button">
 			<div>
+				<p>Already a User? <%= link_to 'Login', :controller => 'admin', :action => 'login' %></p>
+			</div>
+			<div>
+				<%= link_to 'Create New User', :controller => 'users', :action => 'new' %>
 			</div>
 		</div>
-		<div class="roundedcornr_content">
-			<h1>Articl.es</h1>
-			<h4>...clever sayings don't just come from leprechauns</h4>
-		</div>
-    <div class="roundedcornr_bottom">
-			<div>
+		<div class="roundedcornr_box">
+			<div class="roundedcornr_top">
+				<div>
+				</div>
+			</div>
+			<div class="roundedcornr_content">
+				<h1>Articl.es</h1>
+				<h4>...clever sayings don't just come from leprechauns</h4>
+			</div>
+			<div class="roundedcornr_bottom">
+				<div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -42,7 +52,7 @@
 		</div>
 		
 		<div>
-			<%= f.submit 'Create!' %>
+			<%= f.submit 'Create!', :action => 'initialize_edits' %>
 		</div>
 	<% end %>
 	</div>

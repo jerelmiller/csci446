@@ -34,22 +34,29 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
-    @article = Article.find(params[:id])
+		authorize
+		@article = Article.find(params[:id])
   end
 
   # POST /articles
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
+		@author = Article.new(params[:author])
+		if @author == "Sally"
+			redirect_to 'index'
+		else
+			@article.edits = 0
 
-    respond_to do |format|
-      if @article.save
-        format.html { redirect_to(articles_path) }
-        format.xml  { render :xml => @article, :status => :created, :location => @article }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-      end
+			respond_to do |format|
+				if @article.save
+					format.html { redirect_to(articles_path) }
+					format.xml  { render :xml => @article, :status => :created, :location => @article }
+				else
+					format.html { render :action => "new" }
+					format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
+				end
+			end
     end
   end
 
@@ -57,6 +64,7 @@ class ArticlesController < ApplicationController
   # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
+		@article.edits += 1
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
@@ -72,12 +80,33 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.xml
   def destroy
-    @article = Article.find(params[:id])
-    @article.destroy
+		@valid_user = User.find_by_id(session[:user_id])
+		if @valid_user
+			@article = Article.find(params[:id])
+			@article.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(articles_url) }
-      format.xml  { head :ok }
-    end
+			respond_to do |format|
+				format.html { redirect_to(articles_url) }
+				format.xml  { head :ok }
+			end
+		else
+			authorize
+		end
   end
+	
+	def check_authorize
+		@valid_user = authorize
+		if @valid_user
+			destroy
+		end
+	end
+	
+protected
+
+	def authorize
+		unless User.find_by_id(session[:user_id])
+			redirect_to :controller => 'admin', :action => 'login'
+		end
+	end
+	
 end

@@ -239,6 +239,64 @@ a:hover {
 	width: 170px;
 }
 
+/* Styles for New User */
+
+.user-form fieldset {
+  background: #999;
+	width: 400px;
+}
+
+.user-form legend {
+  color: #555;
+  background: #B1BDB4;
+  font-family: "Courier New";
+  padding: 0.2em 1em;
+}
+
+.user-form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 10px;
+  margin-right: 0.1em;
+  display: block;
+}
+
+.user-form select, .user-form textarea, .user-form input {
+  margin: 5px;
+}
+
+.user-form .submit{
+  margin: 30px 0px 0px 20px;
+}
+
+.user-form div {
+  margin: 5px 10px;
+}
+
+.login {
+	background: #AAA;
+}
+
+.login-button {
+	float: right;
+	margin: 20px 40px 0px 0px;
+	font-size: 1.2em;
+	font-family: fantasy;
+	color: #AAA;
+	text-align: right;
+}
+
+.login-button p {
+	margin: 10px 0px 10px 0px;
+	font-family: fantasy;
+	font-size: 1em;
+	color: #AAA;
+}
+
+.new-button {
+	float: left;
+}
 
 
 
