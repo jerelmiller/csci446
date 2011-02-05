@@ -1,0 +1,44 @@
+<div class="container">
+	<div class="roundedcornr_box">
+		<div class="roundedcornr_top">
+			<div>
+			</div>
+		</div>
+		<div class="roundedcornr_content">
+			<h1>Articl.es</h1>
+			<h4>...Chuck Norris has nothing on me</h4>
+		</div>
+    <div class="roundedcornr_bottom">
+			<div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="links-row">
+		<div class="email-link">
+			<%= link_to (image_tag('/images/email.png', :border => 0, :class => 'icon-reposition')) + "email", :action => :email %>
+		</div>
+		<div class="delete-link">
+			<%= link_to (image_tag('/images/delete_article.png', :border => 0, :class => 'icon-reposition')) + "delete", @article, :confirm => 'Are you sure?', :method => :delete %>
+		</div>
+		<div class="edit-link">
+			<%= link_to (image_tag('/images/edit_article.png', :border => 0, :class => 'icon-reposition')) + "edit", edit_article_path(@article) %>
+		</div>
+		<div class="articles-link">
+			<%= link_to (image_tag('/images/back.png', :border => 0, :class => 'icon-reposition')) + "list all articles", articles_path %>
+		</div>
+	</div>
+
+	<div class="article-title">
+		<h1><%=h @article.title %></h1>
+	</div>
+
+	<div class="author">
+		<p>by <%= @article.author %>.</p>
+	</div
+
+	<div class="article-body">
+		<p><%=h @article.body %></p>
+	</div>
+
+</div>

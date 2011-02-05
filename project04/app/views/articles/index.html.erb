@@ -1,0 +1,74 @@
+<div class="container">
+	<div class="roundedcornr_box">
+		<div class="roundedcornr_top">
+			<div>
+			</div>
+		</div>
+		<div class="roundedcornr_content">
+			<h1>Articl.es</h1>
+			<h4>...Taking over the world...One ridicululous title at a time</h4>
+		</div>
+    <div class="roundedcornr_bottom">
+			<div>
+			</div>
+		</div>
+	</div>
+	
+	<br />
+	<br />
+	
+	<div id="article-add-table-title">
+		<div id="create-article">
+			<%= link_to (image_tag('/images/add_article.png', :border => 0)) + "Add an Article", new_article_path %>
+		</div>
+		<div id="table-title">
+			<h2>All the World's Articles</h2>
+		</div>
+	<div>
+
+
+	<div class="article-list">
+		<table class="article-list-table">
+			<tr id="titles">
+				<td width="120px">Title</td>
+				<td width="120px">Author</td>
+				<td>Body</td>
+				<td width="200px">Creation Date</td>
+			</tr>
+			<% @articles.each do |article| %>
+			<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+				<td><%=h article.title %></td>
+				<td><%=h article.author %></td>
+				<td><%=h article.body %></td>
+				<td><% t=Time.now %>
+						<%= t.strftime("%a, %b. %d %Y") %></td>
+				<td class="icons"><%= link_to (image_tag ('/images/view_article.png', :border => 0, :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), article %></td>
+				<td class="icons"><%= link_to (image_tag('/images/edit_article.png', :border => 0, :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_article_path(article) %></td>
+				<td class="icons"><%= link_to (image_tag('/images/delete_article.png', :border => 0, :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), article, :confirm => 'Are you sure?', :method => :delete %></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+	
+	<div class="article-count">		
+		<% if @articles.count == 1 %>
+			<%= @articles.count %>
+			<%= " article" %>
+		<% else %>
+			<%= @articles.count %>
+			<%= " articles" %>
+		<% end %>
+	</div>
+	
+	<div class="domination-message">
+		<p><b>Domination Status:</b> The domination scheme is as well known to the world as a fly is to Siberia</p>
+	</div>
+	
+	
+</div>	
+	
+	
+	
+	
+	
+
