@@ -26346,3 +26346,218 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
 Completed in 52ms (View: 45, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 05:19:21) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+Completed in 91ms (View: 85, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 05:19:37) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-07 05:20:51) [POST]
+  Parameters: {"article"=>{"body"=>"I love Liz with all my heart and with all my soul. I wish I could be with her forever.\r\n\r\nShe is the love of my life. I don't know how I got lucky enough to find her but I did. And now I am the happiest man anyone could ever be. She is the best thing to ever happen.\r\n\r\nShe has a great smile and she is the most beautiful thing on this earth. Yep. I love her. ", "author"=>"I love you", "title"=>"Oh hey Liz :)"}, "commit"=>"Create!", "authenticity_token"=>"aNMq5mIBspv5weLVFyq+B1frjx3KaBE7EoFYmZjBQFM="}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Oh hey Liz :)') LIMIT 1[0m
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author", "body", "updated_at", "edits") VALUES('2011-02-07 12:20:51', 'Oh hey Liz :)', 'I love you', 'I love Liz with all my heart and with all my soul. I wish I could be with her forever.
+
+She is the love of my life. I don''t know how I got lucky enough to find her but I did. And now I am the happiest man anyone could ever be. She is the best thing to ever happen.
+
+She has a great smile and she is the most beautiful thing on this earth. Yep. I love her. ', '2011-02-07 12:20:51', 0)[0m
+Redirected to http://localhost:3000/articles
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 05:20:51) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+Completed in 122ms (View: 49, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 05:20:59) [GET]
+  Parameters: {"id"=>"39"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 39) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/39]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 05:21:16) [GET]
+  Parameters: {"id"=>"email"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=email):
+  app/controllers/articles_controller.rb:17:in `show'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 05:21:33) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 85ms (View: 80, DB: 0) | 200 OK [http://localhost/articles/16/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 05:21:35) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+Completed in 56ms (View: 50, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 05:21:38) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/16]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 05:21:39) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/16/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 05:21:40) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/16]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 05:21:42) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+Completed in 121ms (View: 115, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 05:21:59) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/16]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 05:22:09) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/16/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 05:22:15) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/16]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 05:22:16) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+Completed in 55ms (View: 49, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 05:22:17) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 16) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 77ms (View: 72, DB: 0) | 200 OK [http://localhost/articles/16/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 05:22:20) [GET]
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/Jerel/Documents/cs446/src/project04/app/views/articles/index.html.erb:45)
+Completed in 57ms (View: 50, DB: 1) | 200 OK [http://localhost/articles]
