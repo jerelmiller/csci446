@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   # GET /articles.xml
   def index
     @articles = Article.all
+		@total_articles = Article.count
 
     respond_to do |format|
       format.html # index.html.erb
@@ -34,7 +35,6 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
-		authorize
 		@article = Article.find(params[:id])
   end
 
@@ -42,23 +42,18 @@ class ArticlesController < ApplicationController
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
-		@author = Article.new(params[:author])
-		if @author == "Sally"
-			redirect_to 'index'
-		else
-			@article.edits = 0
+		@article.edits = 0
 
-			respond_to do |format|
-				if @article.save
-					format.html { redirect_to(articles_path) }
-					format.xml  { render :xml => @article, :status => :created, :location => @article }
-				else
-					format.html { render :action => "new" }
-					format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-				end
+		respond_to do |format|
+			if @article.save
+				format.html { redirect_to(articles_path) }
+				format.xml  { render :xml => @article, :status => :created, :location => @article }
+			else
+				format.html { render :action => "new" }
+				format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
 			end
-    end
-  end
+		end
+	end
 
   # PUT /articles/1
   # PUT /articles/1.xml
@@ -80,33 +75,16 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.xml
   def destroy
-		@valid_user = User.find_by_id(session[:user_id])
-		if @valid_user
-			@article = Article.find(params[:id])
-			@article.destroy
+		@article = Article.find(params[:id])
+		@article.destroy
 
-			respond_to do |format|
-				format.html { redirect_to(articles_url) }
-				format.xml  { head :ok }
-			end
-		else
-			authorize
+		respond_to do |format|
+			format.html { redirect_to(articles_url) }
+			format.xml  { head :ok }
 		end
   end
 	
-	def check_authorize
-		@valid_user = authorize
-		if @valid_user
-			destroy
-		end
+	def go_back
+		redirect_to :back
 	end
-	
-protected
-
-	def authorize
-		unless User.find_by_id(session[:user_id])
-			redirect_to :controller => 'admin', :action => 'login'
-		end
-	end
-	
 end

@@ -1,34 +1,21 @@
-<div class="container">
-	<div>
-		<div class="login-button">
+<div>
+	<div class="roundedcornr_box">
+		<div class="roundedcornr_top">
 			<div>
-				<p>Already a User? <%= link_to 'Login', :controller => 'admin', :action => 'login' %></p>
-			</div>
-			<div>
-				<%= link_to 'Create New User', :controller => 'users', :action => 'new' %>
 			</div>
 		</div>
-		<div class="roundedcornr_box">
-			<div class="roundedcornr_top">
-				<div>
-				</div>
-			</div>
-			<div class="roundedcornr_content">
-				<h1>Articl.es</h1>
-				<h4>...bit.ly says that he misses you</h4>
-			</div>
-			<div class="roundedcornr_bottom">
-				<div>
-				</div>
+		<div class="roundedcornr_content">
+			<h1>Articl.es</h1>
+			<h4>...bit.ly says that he misses you</h4>
+		</div>
+		<div class="roundedcornr_bottom">
+			<div>
 			</div>
 		</div>
 	</div>
 	
-	<br />
-	<br />
-	
 	<div>
-		<%= link_to (image_tag('/images/back.png', :border => 0, :class => 'icon-reposition')) + "back", :back %>
+		<%= link_to (image_tag('/images/back.png', :border => 0, :title => "Back", :class => 'icon-reposition')) + "back", :back, {:title => "Back"} %>
 	</div>
 	
 	<div class="subtitle">
