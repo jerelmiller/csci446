@@ -102,7 +102,7 @@ a:hover {
 }
 
 #article-add-table-title {
-	margin: 100px 0px 20px 20px;
+	margin: 50px 0px 20px 20px;
 }
 
 .article-list {
@@ -265,6 +265,80 @@ a:hover {
   	background: #FFF0F0;
   
 }
+
+/* Styles for menubar */
+
+ul.menubar {
+	list-style-type: none;
+	margin: 50px 100px 0px 40px;
+	padding: 10px;
+
+	text-align: center;
+}
+
+ul.menubar li {
+	display: inline;
+	margin: 0px 100px 0px 100px;
+	color: #CCC;
+	font-size: 1.4em;
+	text-align: middle;
+}
+
+ul.menubar a {
+	color: #AAA;
+}
+
+ul.menubar a:visited {
+	color: #999;
+}
+
+ul.menubar a:hover {
+	color: #DDD;
+}
+
+/* Styles for author list */
+
+#create-author {
+	font-size: 1.3em;
+	margin-left: 20px;
+}
+
+#author-add-table-title {
+	margin: 50px 0px 20px 20px;
+	color: #AAA;
+	font-family: fantasy;
+}
+
+.author-list {
+	margin: 20px 0px 40px 40px;
+	padding: 0px 20px 0px 0px;
+}
+
+.author-list #titles {
+	background-color: #666;
+	color: #AAA;
+}
+
+.author-list td {
+	padding: 0px 5px 0px 5px;
+	height: 37px;
+}
+
+.icons {
+	background: #37414A;
+	width: 40px;
+}
+
+.list-line-odd {
+	background: #B1BDB4;
+}
+
+.list-line-even {
+	background: #AAA;
+}
+
+
+
 
 
 

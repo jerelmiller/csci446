@@ -1,16 +1,20 @@
-<h1>Editing author</h1>
-
-<% form_for(@author) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+<% content_for :subtitle do %>
+...NYTimes and Time Magazine...all rolled into one
 <% end %>
-
-<%= link_to 'Show', @author %> |
-<%= link_to 'Back', authors_path %>
+	
+<div>
+	<%= link_to (image_tag('/images/back.png', :border => 0, :title => "Back", :class => 'icon-reposition')) + "back", :back, 	{:title => "Back"} %>
+</div>
+	
+<div class="subtitle">
+	<h1>Editing Author</h1>
+</div>
+	
+<div class="article-form">
+	<% form_for(@author) do |f| %>
+	<%= render :partial => 'form', :locals => {:f => f} %>
+<div>
+	<%= f.submit 'Save Changes' %>
+</div>
+	<% end %>
+</div>

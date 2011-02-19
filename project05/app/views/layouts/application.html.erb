@@ -12,6 +12,10 @@
 <%= render :partial => 'layouts/title' %>
 <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
 
+<ul class="menubar">
+	<li><%= link_to "Articles", articles_path, :title => "All The World's Articles" %></li>
+	<li><%= link_to "Authors", authors_path, :title => "All The World's Authors" %></li>
+</ul>
 <%= yield %>
 
 </body>

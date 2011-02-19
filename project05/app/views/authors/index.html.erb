@@ -1,20 +1,28 @@
-<h1>Listing authors</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
-
-<% @authors.each do |author| %>
-  <tr>
-    <td><%=h author.name %></td>
-    <td><%= link_to 'Show', author %></td>
-    <td><%= link_to 'Edit', edit_author_path(author) %></td>
-    <td><%= link_to 'Destroy', author, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<% content_for :subtitle do %> 
+...choking out Wikipedia...one word at a time
 <% end %>
-</table>
 
-<br />
+<div id="author-add-table-title">
 
-<%= link_to 'New author', new_author_path %>
+	<div id="table-title">
+		<h2>All the World's Authors</h2>
+	</div>
+</div>
+	<div class="author-list">
+		<table>
+			<tr id="titles">
+				<td width="120px">Author</td>
+			</tr>
+			<% @authors.each do |author| %>
+			<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+				<td><%=h author.name %></td>
+				<td class="icons"><%= link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author) %></td>
+				<td class="icons"><%= link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete %></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+	
+	<div id="create-author">
+		<%= link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'} %>
+	</div>

@@ -1,15 +1,20 @@
-<h1>New author</h1>
-
-<% form_for(@author) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+<% content_for :subtitle do %>
+...bringing a whole new meaning to 'clever'
 <% end %>
 
-<%= link_to 'Back', authors_path %>
+<div>
+		<%= link_to (image_tag('/images/back.png', :border => 0, :title => "List All Authors", :class => 'icon-reposition')) + "list all authors", authors_path, {:title => "List All Authors"} %>
+</div>
+	
+<div class="subtitle">
+	<h2>Creating a New Author</h2>
+</div>
+
+<div class="article-form">
+	<% form_for(@author) do |f| %>
+		<%= render :partial => 'form', :locals => {:f => f} %>
+	<div>
+		<%= f.submit 'Create!', :action => 'initialize_edits' %>
+	</div>
+	<% end %>
+</div>
