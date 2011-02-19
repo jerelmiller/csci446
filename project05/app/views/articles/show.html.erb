@@ -1,0 +1,33 @@
+<% content_for :subtitle do %>
+...Chuck Norris has nothing on me
+<% end %>
+	
+	<div class="links-row">
+		<div class="email-link">
+			<%= mail_to '', (image_tag('/images/email.png', :border => 0, :title => "Email this article", :class => 'icon-reposition')) + "email", :subject => @article.title, :body => article_url(@article), :title => 'Email This article' %>
+		</div>
+		<div class="delete-link">
+			<%= link_to (image_tag('/images/delete_article.png', :border => 0, :title => "Delete This Article", :class => 'icon-reposition')) + "delete", @article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete This article" %>
+		</div>
+		<div class="edit-link">
+			<%= link_to (image_tag('/images/edit_article.png', :border => 0, :title => "Edit This Article", :class => 'icon-reposition')) + "edit", edit_article_path(@article), {:title => "Edit This Article"} %>
+		</div>
+		<div class="articles-link">
+			<%= link_to (image_tag('/images/back.png', :border => 0, :title => "List All Articles", :class => 'icon-reposition')) + "list all articles", articles_path, {:title => "List All Articles"} %>
+		</div>
+	</div>
+
+	<div class="article-title">
+		<h1><%=h @article.title %></h1>
+	</div>
+
+	<div class="author">
+		<p>by <%= @article.author_name %>.
+			<%= pluralize(@article.update_count, 'edit') %> since <%= @article.created_at.strftime("%b. %d, %Y.") %></p>
+	</div
+
+	<div class="article-body">
+		<p><%=h simple_format(@article.body) %></p>
+	</div>
+
+</div>
