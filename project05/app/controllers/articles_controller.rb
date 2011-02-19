@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
   before_filter :load_authors, :only => [:new, :edit, :update]
   
   def index
-    @articles = Article.all(:include => :author)
+    @articles = Article.paginate(:page => params[:page])
+    @num_articles = Article.count
   end
 
   def show

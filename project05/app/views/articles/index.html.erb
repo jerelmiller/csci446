@@ -3,10 +3,6 @@
 <% end %>
 
 	
-	<div class="notice">
-		<%= notice %>
-	</div>
-	
 	
 	<div id="article-add-table-title">
 		<div id="create-article">
@@ -16,6 +12,8 @@
 			<h2>All the World's Articles</h2>
 		</div>
 	<div>
+		
+	<%= will_paginate @articles %>
 
 	<% if @articles.count > 0 %>
 		
@@ -44,7 +42,7 @@
 	<% end %>
 	
 	<div class="article-count">		
-		<%= pluralize(@articles.count, 'article') %>
+		<%= pluralize(@num_articles, 'article') %>
 	</div>
 	
 </div>	

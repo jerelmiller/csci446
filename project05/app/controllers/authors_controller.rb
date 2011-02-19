@@ -2,7 +2,7 @@ class AuthorsController < ApplicationController
   before_filter :set_edit_return_url, :only => [:edit]
   
   def index
-    @authors = Author.all
+    @authors = Author.paginate(:page => params[:page])
   end
 
   def show
