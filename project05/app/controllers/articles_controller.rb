@@ -1,8 +1,9 @@
 class ArticlesController < ApplicationController
   before_filter :set_edit_return_url, :only => [:edit]
+  before_filter :load_authors, :only => [:new, :edit, :update]
   
   def index
-    @articles = Article.all
+    @articles = Article.all(:include => :author)
   end
 
   def show
@@ -35,7 +36,7 @@ class ArticlesController < ApplicationController
       redirect_to(session[:edit_redirect], :flash => { :success => 'Article was successfully updated.'})
     else
       flash[:error] = 'There was a problem updating the article.'
-      render :action => 'edit'
+      render :action => "edit"
     end
   end
 
@@ -50,6 +51,10 @@ class ArticlesController < ApplicationController
     
     def set_edit_return_url
       session[:edit_redirect] = request.referer
+    end
+    
+    def load_authors
+      @authors = Author.all
     end
   
 end
