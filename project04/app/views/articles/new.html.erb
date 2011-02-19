@@ -1,49 +1,20 @@
+<% content_for :subtitle do %>
+...clever sayings don't just come from leprechauns
+<% end %>
+
 <div>
-	<div class="roundedcornr_box">
-		<div class="roundedcornr_top">
-			<div>
-			</div>
-		</div>
-		<div class="roundedcornr_content">
-			<h1>Articl.es</h1>
-			<h4>...clever sayings don't just come from leprechauns</h4>
-		</div>
-		<div class="roundedcornr_bottom">
-			<div>
-			</div>
-		</div>
-	</div>
+		<%= link_to (image_tag('/images/back.png', :border => 0, :title => "List All Articles", :class => 'icon-reposition')) + "list all articles", articles_path, {:title => "List All Articles"} %>
+</div>
 	
-	<div>
-			<%= link_to (image_tag('/images/back.png', :border => 0, :title => "List All Articles", :class => 'icon-reposition')) + "list all articles", articles_path, {:title => "List All Articles"} %>
-	</div>
-	
-	<div class="subtitle">
-		<h2>Creating a New Article</h2>
-	</div>
+<div class="subtitle">
+	<h2>Creating a New Article</h2>
+</div>
 
-	<div class="article-form">
+<div class="article-form">
 	<% form_for(@article) do |f| %>
-		<%= f.error_messages %>
-
-		<div>
-			<%= f.label :title %>
-			<%= f.text_field :title %>
-		</div>
-		
-		<div>
-			<%= f.label :author %>
-			<%= f.text_field :author %>
-		</div>
-		
-		<div>
-			<%= f.label :body %>
-			<%= f.text_area :body %>
-		</div>
-		
-		<div>
-			<%= f.submit 'Create!', :action => 'initialize_edits' %>
-		</div>
-	<% end %>
+		<%= render :partial => 'form', :locals => {:f => f} %>
+	<div>
+		<%= f.submit 'Create!', :action => 'initialize_edits' %>
 	</div>
+	<% end %>
 </div>

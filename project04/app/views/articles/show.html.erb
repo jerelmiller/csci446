@@ -1,22 +1,10 @@
-<div>
-	<div class="roundedcornr_box">
-		<div class="roundedcornr_top">
-			<div>
-			</div>
-		</div>
-		<div class="roundedcornr_content">
-			<h1>Articl.es</h1>
-			<h4>...Chuck Norris has nothing on me</h4>
-		</div>
-		<div class="roundedcornr_bottom">
-			<div>
-			</div>
-		</div>
-	</div>
+<% content_for :subtitle do %>
+...Chuck Norris has nothing on me
+<% end %>
 	
 	<div class="links-row">
 		<div class="email-link">
-			<%= link_to (image_tag('/images/email.png', :border => 0, :title => "Email this article", :class => 'icon-reposition')) + "email", {:action => :email}, {:title => "Email This article"} %>
+			<%= mail_to '', (image_tag('/images/email.png', :border => 0, :title => "Email this article", :class => 'icon-reposition')) + "email", :subject => @article.title, :body => article_url(@article), :title => 'Email This article' %>
 		</div>
 		<div class="delete-link">
 			<%= link_to (image_tag('/images/delete_article.png', :border => 0, :title => "Delete This Article", :class => 'icon-reposition')) + "delete", @article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete This article" %>
@@ -34,12 +22,8 @@
 	</div>
 
 	<div class="author">
-		<p>by <%= @article.author %>. 
-		<% if @article.edits ==1 %>
-			<%= @article.edits %> edit since <%= @article.created_at.strftime("%b. %d, %Y.") %></p>
-		<% else %>
-			<%= @article.edits %> edits since <%= @article.created_at.strftime("%b. %d, %Y.") %></p>
-		<% end %>
+		<p>by <%= @article.author_name %>.
+			<%= pluralize(@article.update_count, 'edit') %> since <%= @article.created_at.strftime("%b. %d, %Y.") %></p>
 	</div
 
 	<div class="article-body">

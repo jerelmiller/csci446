@@ -1,18 +1,7 @@
-<div>
-	<div class="roundedcornr_box">
-		<div class="roundedcornr_top">
-			<div>
-			</div>
-		</div>
-		<div class="roundedcornr_content">
-			<h1>Articl.es</h1>
-			<h4>...Taking over the world...One ridicululous title at a time</h4>
-		</div>
-		<div class="roundedcornr_bottom">
-			<div>
-			</div>
-		</div>
-	</div>
+<% content_for :subtitle do %>
+...Taking over the world...One ridicululous title at a time
+<% end %>
+
 	
 	<div class="notice">
 		<%= notice %>
@@ -41,9 +30,9 @@
 			<% @articles.each do |article| %>
 			<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
 				<td><%=h article.title %></td>
-				<td><%=h article.author %></td>
-				<td><%=h truncate(article.body, 65, "...") %></td>
-				<td><%=h article.created_at.strftime("%A, %b. %d %Y") %></td>
+				<td><%=h article.author_name %></td>
+				<td><%=h truncate(article.body, :length => 65) %></td>
+				<td><%= article.created_at.strftime("%A, %b. %d %Y") %></td>
 				<td class="icons"><%= link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Article', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), article %></td>
 				<td class="icons"><%= link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Article', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_article_path(article) %></td>
 				<td class="icons"><%= link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Article', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), article, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -55,13 +44,7 @@
 	<% end %>
 	
 	<div class="article-count">		
-		<% if @articles.count == 1 %>
-			<%= @articles.count %>
-			<%= " article" %>
-		<% else %>
-			<%= @total_articles %>
-			<%= " articles" %>
-		<% end %>
+		<%= pluralize(@articles.count, 'article') %>
 	</div>
 	
 </div>	
