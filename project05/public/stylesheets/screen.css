@@ -281,7 +281,6 @@ ul.menubar li {
 	margin: 0px 100px 0px 100px;
 	color: #CCC;
 	font-size: 1.4em;
-	text-align: middle;
 }
 
 ul.menubar a {
@@ -335,6 +334,33 @@ ul.menubar a:hover {
 
 .list-line-even {
 	background: #AAA;
+}
+
+/* Styles for Photo */
+
+.photo {
+	margin: 40px 0px 0px 60px;
+	color: red;
+	font-size: 1.3em;
+	font-family: fantasy;
+}
+
+.photo p {
+	color: #AAA;
+	font-size: 1.5em;
+	font-family: "Courier New";
+}
+
+/* Styles for listing of article */
+
+.author-article-list {
+	margin: 20px 0px 0px 60px;
+}
+
+.author-article-list p {
+	color: #AAA;
+	font-size: 1.5em;
+	font-family: "Courier New";
 }
 
 

@@ -37161,3 +37161,1430 @@ Rendering authors/index
 Rendered layouts/_title (0.1ms)
 Rendered layouts/_flash (0.1ms)
 Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 01:39:51) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (19.4ms)
+Rendered layouts/_flash (9.0ms)
+Completed in 92ms (View: 69, DB: 1) | 200 OK [http://localhost/authors]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110219014310)
+Migrating to CreateAuthors (20110219032415)
+Migrating to AddAttachmentsPhotoToAuthor (20110219085508)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "authors" ADD "photo_file_name" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "authors" ADD "photo_content_type" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "authors" ADD "photo_file_size" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "authors" ADD "photo_updated_at" datetime[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110219085508')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("articles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("authors")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:03:12) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (23.2ms)
+Rendered layouts/_flash (10.3ms)
+Completed in 105ms (View: 78, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:03:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:03:17) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 95ms (View: 90, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:03:19) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/7]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:05:06) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 34ms (View: 29, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#new (for 127.0.0.1 at 2011-02-19 02:05:08) [GET]
+Rendering template within layouts/application
+Rendering authors/new
+Rendered authors/_form (4.9ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/authors/new]
+
+
+Processing AuthorsController#new (for 127.0.0.1 at 2011-02-19 02:13:44) [GET]
+
+SyntaxError (/Users/Jerel/Documents/cs446/src/project05/app/models/author.rb:7: syntax error, unexpected tSTRING_BEG, expecting kEND
+                    :url '/assets/:class/:attachment/:id...
+                          ^):
+  app/controllers/authors_controller.rb:13:in `new'
+
+Rendered rescues/_trace (600.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#new (for 127.0.0.1 at 2011-02-19 02:14:10) [GET]
+Rendering template within layouts/application
+Rendering authors/new
+Rendered authors/_form (24.0ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 64ms (View: 59, DB: 0) | 200 OK [http://localhost/authors/new]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:18:31) [GET]
+  [4;35;1mAuthor Load (0.7ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.3ms)
+Rendered layouts/_flash (0.4ms)
+Completed in 105ms (View: 94, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:18:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `photo_url' for #<Author:0x1041a8fb0>) on line #26 of app/views/authors/show.html.erb:
+23: 
+24: <div>
+25: 	<h5>Photo:</h5> 
+26: 	<%= image_tag @author.photo_url %>
+27: </div>
+
+    app/views/authors/show.html.erb:26
+
+Rendered rescues/_trace (45.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#edit (for 127.0.0.1 at 2011-02-19 02:18:50) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/edit
+Rendered authors/_form (6.0ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 50ms (View: 42, DB: 1) | 200 OK [http://localhost/authors/4/edit]
+
+
+Processing AuthorsController#update (for 127.0.0.1 at 2011-02-19 02:19:19) [PUT]
+  Parameters: {"commit"=>"Save Changes", "author"=>{"photo"=>#<File:/var/folders/xO/xOVRa1GBEViUrjw-CmQA4++++TI/-Tmp-/RackMultipart20110219-25969-2mbkuz-0>, "name"=>"Jerel Miller"}, "authenticity_token"=>"LRDFJ/ShgmY3hYjnRkoq58p1hm7VY17HuPpbvaNMn14=", "id"=>"4"}
+  [4;36;1mAuthor Load (0.5ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+  [4;35;1mAuthor Update (0.4ms)[0m   [0mUPDATE "authors" SET "updated_at" = '2011-02-19 09:19:19', "photo_file_name" = 'logo_realstuff.jpg', "photo_file_size" = 114656, "photo_updated_at" = '2011-02-19 09:19:19', "photo_content_type" = 'image/jpeg' WHERE "id" = 4[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Jerel/Documents/cs446/src/project05/public/assets/authors/photos/4/original/logo_realstuff.jpg
+Redirected to http://localhost:3000/authors
+Completed in 79ms (DB: 2) | 302 Found [http://localhost/authors/4]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:19:19) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 134ms (View: 126, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:19:22) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `photo_url' for #<Author:0x1043a1ec0>) on line #26 of app/views/authors/show.html.erb:
+23: 
+24: <div>
+25: 	<h5>Photo:</h5> 
+26: 	<%= image_tag @author.photo_url %>
+27: </div>
+
+    app/views/authors/show.html.erb:26
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:19:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 48ms (View: 27, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:22:08) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 84ms (View: 61, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:22:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:25:02) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @articles.each do |article|%>
+31: 	<li><%= article.title %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (133.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:25:14) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @authors.each do |article|%>
+31: 	<li><%= article.title %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:25:25) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @authors.each do |author|%>
+31: 	<li><%= article.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:25:26) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @authors.each do |author|%>
+31: 	<li><%= article.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (117.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:25:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @authors.each do |author|%>
+31: 	<li><%= author.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:25:36) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @authors.each do |author|%>
+31: 	<li><%= author.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:26:29) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @authors.each do |author| %>
+31: 	<li><%=h author.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (39.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:26:30) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div class="author-articles-list">
+29: <ul>
+30: 	<% @authors.each do |author| %>
+31: 	<li><%=h author.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:28:00) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<% @authors.each do |author| %>
+31: 	<li><%=h author.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (114.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:28:01) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<% @authors.each do |author| %>
+31: 	<li><%=h author.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:28:18) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `each' for #<Author:0x10409ce50>) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<% @author.each do |author| %>
+31: 	<li><%=h author.name %></li>
+32: 	<% end %>
+33: </ul>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:28:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:29:02) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `author_id' for #<Author:0x104127370>) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<li><%=h @author.author_id %></li>
+31: </ul>
+32: </div>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:32:10) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `author_id' for #<Author:0x10426d310>) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<li><%=h @author.author_id %></li>
+31: </ul>
+32: </div>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (117.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:32:22) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `author_id' for nil:NilClass) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<li><%=h @articles.author_id %></li>
+31: </ul>
+32: </div>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:32:30) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<li><%=h @articles.title %></li>
+31: </ul>
+32: </div>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:32:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #30 of app/views/authors/show.html.erb:
+27: 
+28: <div>
+29: <ul>
+30: 	<li><%=h @article.title %></li>
+31: </ul>
+32: </div>
+
+    app/views/authors/show.html.erb:30
+
+Rendered rescues/_trace (116.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:32:42) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:33:12) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:33:16) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:33:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:33:19) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:33:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:33:44) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:33:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:33:50) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:34:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:34:38) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:34:45) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:34:46) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:35:03) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:35:30) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:35:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 82ms (View: 75, DB: 1) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:36:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:36:21) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:36:42) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:36:47) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 93ms (View: 88, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:36:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:36:49) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:37:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:37:07) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:37:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:37:17) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:37:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:37:29) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:37:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:37:30) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:37:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:37:51) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:38:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 81ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:38:20) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:38:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:38:36) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:39:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:39:11) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:39:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:39:24) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:39:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:39:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:40:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 42ms (View: 10, DB: 26) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:40:01) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:40:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:40:10) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:40:20) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 32ms (View: 25, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:40:22) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:40:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:41:50) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:41:59) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:42:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:42:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:42:46) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:42:46) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 77ms (View: 10, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:43:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 33ms (View: 10, DB: 17) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:43:39) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/4]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:43:50) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:43:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 77ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:43:51) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#edit (for 127.0.0.1 at 2011-02-19 02:43:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering authors/edit
+Rendered authors/_form (27.4ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 40ms (View: 32, DB: 1) | 200 OK [http://localhost/authors/3/edit]
+
+
+Processing AuthorsController#update (for 127.0.0.1 at 2011-02-19 02:44:19) [PUT]
+  Parameters: {"commit"=>"Save Changes", "author"=>{"photo"=>#<File:/var/folders/xO/xOVRa1GBEViUrjw-CmQA4++++TI/-Tmp-/RackMultipart20110219-25969-ado0md-0>, "name"=>"Pizza Pie"}, "authenticity_token"=>"LRDFJ/ShgmY3hYjnRkoq58p1hm7VY17HuPpbvaNMn14=", "id"=>"3"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;36;1mAuthor Update (0.3ms)[0m   [0;1mUPDATE "authors" SET "updated_at" = '2011-02-19 09:44:19', "photo_file_name" = 'back.gif', "photo_file_size" = 827, "photo_updated_at" = '2011-02-19 09:44:19', "photo_content_type" = 'image/gif' WHERE "id" = 3[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Jerel/Documents/cs446/src/project05/public/assets/authors/photos/3/original/back.gif
+Redirected to http://localhost:3000/authors/3
+Completed in 34ms (DB: 16) | 302 Found [http://localhost/authors/3]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:44:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/3]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:44:23) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:44:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/3]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:44:27) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#new (for 127.0.0.1 at 2011-02-19 02:44:29) [GET]
+Rendering template within layouts/application
+Rendering authors/new
+Rendered authors/_form (4.0ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/authors/new]
+
+
+Processing AuthorsController#create (for 127.0.0.1 at 2011-02-19 02:44:31) [POST]
+  Parameters: {"commit"=>"Create!", "author"=>{"name"=>""}, "authenticity_token"=>"LRDFJ/ShgmY3hYjnRkoq58p1hm7VY17HuPpbvaNMn14="}
+Rendering template within layouts/application
+Rendering authors/new
+Rendered authors/_form (6.1ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:44:35) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:44:39) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-19 02:44:42) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" IN (1,2,3)) [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 138ms (View: 37, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:44:44) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-19 02:45:46) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" IN (1,2,3)) [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 106ms (View: 30, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-19 02:45:48) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mAuthor Load (0.5ms)[0m   [0;1mSELECT * FROM "authors" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Rendered articles/_form (6.8ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 51ms (View: 41, DB: 1) | 200 OK [http://localhost/articles/9/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-19 02:45:53) [PUT]
+  Parameters: {"article"=>{"body"=>"Zepto duonhoro kio ul, bo zorgi reciprokeco lia. Oble kvanta diskriminacio ko mis, kie triangulo punktokomo postesigno ke, cento poste dua e. Frota apostrofo malantaŭa tro fo, ve eko minca deksesuma. Nenia iufoje nk vol.\r\n\r\n                         Alies minimume daralbajdo vic os, devi makro respondeci tiu de. Ree ti povus maksimume, nur finno esceptinte oj. Io dev estro konjunkcio, ja preterito senobjekta log. Ore faka devi ok. End jaro pentekosto em.\r\n\r\n                         Sin dekono eksploda re, speco krome frazenkondukilo sep ar, fundamenta kazablanko malprofitanto hu sur. Da sor orda ilion septiliono. Tie dekoj frato ac, pebi nedifina finaĵvorto en pre. Nei ba land stif elrigardi, sia kian fundamento tempopunkto uk, avo fari gramatika il. Vir ho afro kunigi, ies pere amen tien ot, tempismo fratineto kvintiliono sed om.", "title"=>"", "author_id"=>"1"}, "commit"=>"Save Changes", "authenticity_token"=>"LRDFJ/ShgmY3hYjnRkoq58p1hm7VY17HuPpbvaNMn14=", "id"=>"9"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Rendered articles/_form (8.0ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 25ms (View: 12, DB: 1) | 200 OK [http://localhost/articles/9]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-19 02:46:00) [PUT]
+  Parameters: {"article"=>{"body"=>"Zepto duonhoro kio ul, bo zorgi reciprokeco lia. Oble kvanta diskriminacio ko mis, kie triangulo punktokomo postesigno ke, cento poste dua e. Frota apostrofo malantaŭa tro fo, ve eko minca deksesuma. Nenia iufoje nk vol.\r\n\r\n                         Alies minimume daralbajdo vic os, devi makro respondeci tiu de. Ree ti povus maksimume, nur finno esceptinte oj. Io dev estro konjunkcio, ja preterito senobjekta log. Ore faka devi ok. End jaro pentekosto em.\r\n\r\n                         Sin dekono eksploda re, speco krome frazenkondukilo sep ar, fundamenta kazablanko malprofitanto hu sur. Da sor orda ilion septiliono. Tie dekoj frato ac, pebi nedifina finaĵvorto en pre. Nei ba land stif elrigardi, sia kian fundamento tempopunkto uk, avo fari gramatika il. Vir ho afro kunigi, ies pere amen tien ot, tempismo fratineto kvintiliono sed om.", "title"=>"The Invisible Man", "author_id"=>"1"}, "commit"=>"Save Changes", "authenticity_token"=>"LRDFJ/ShgmY3hYjnRkoq58p1hm7VY17HuPpbvaNMn14=", "id"=>"9"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 9) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-19 09:46:00', "update_count" = 5 WHERE "id" = 9[0m
+Redirected to http://localhost:3000/articles
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/articles/9]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-19 02:46:00) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" IN (1,2,3)) [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 42ms (View: 31, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-19 02:46:03) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Rendered articles/_form (6.1ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-19 02:46:09) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "author_id"=>""}, "commit"=>"Create!", "authenticity_token"=>"LRDFJ/ShgmY3hYjnRkoq58p1hm7VY17HuPpbvaNMn14="}
+Rendering template within layouts/application
+Rendering articles/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.collect) on line #9 of app/views/articles/_form.html.erb:
+6: </div>
+7: <div>
+8: 	<%= f.label :author_id %>
+9: 	<%= f.select :author_id, @authors.collect { |a| [a.name, a.id] }, :include_blank => true %>
+10: </div>
+11: <div>
+12: 	<%= f.label :body %>
+
+    app/views/articles/_form.html.erb:9
+    app/views/articles/new.html.erb:15
+    app/views/articles/new.html.erb:14
+    app/controllers/articles_controller.rb:28:in `create'
+
+Rendered rescues/_trace (117.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-19 02:47:00) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" IN (1,2,3)) [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 43ms (View: 31, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:47:02) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 66ms (View: 61, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#new (for 127.0.0.1 at 2011-02-19 02:47:04) [GET]
+Rendering template within layouts/application
+Rendering authors/new
+Rendered authors/_form (73.4ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 85ms (View: 79, DB: 0) | 200 OK [http://localhost/authors/new]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:47:06) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#show (for 127.0.0.1 at 2011-02-19 02:47:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering authors/show
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.0ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/authors/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-19 02:47:07) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-19 02:47:10) [GET]
+  [4;35;1mAuthor Load (0.7ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 31ms (View: 24, DB: 1) | 200 OK [http://localhost/authors]

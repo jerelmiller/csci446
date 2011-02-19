@@ -3,6 +3,9 @@ class Author < ActiveRecord::Base
   validates_presence_of :name
   validate :no_author_named_sally
   
+  has_attached_file :photo,
+                    :url => '/assets/:class/:attachment/:id/:style/:filename'
+  
   has_many :articles
   
   def to_s
