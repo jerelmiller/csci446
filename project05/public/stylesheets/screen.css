@@ -346,7 +346,7 @@ ul.menubar a:hover {
 
 .photo p {
 	color: #AAA;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	font-family: "Courier New";
 }
 
@@ -358,10 +358,22 @@ ul.menubar a:hover {
 
 .author-article-list p {
 	color: #AAA;
-	font-size: 1.5em;
+	font-size: 2em;
 	font-family: "Courier New";
 }
 
+.author-article-list ul {
+	list-style-type: square;
+	margin: 0px 0px 0px -20px;
+
+}
+
+.author-article-list li {
+	font-size: 1.3em;
+	color: #AAA;
+	font-family: fantasy;
+	margin-top: 10px;
+}
 
 
 

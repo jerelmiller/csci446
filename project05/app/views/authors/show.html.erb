@@ -28,4 +28,9 @@
 
 <div class="author-article-list">
 	<p>Articles:</p>
+	<ul>
+		<% @authors_articles.each do |article| %>
+			<li><%=h article.title %></li>
+		<% end %>
+	</ul>
 </div>
