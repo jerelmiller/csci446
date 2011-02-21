@@ -7,7 +7,7 @@ class Article < ActiveRecord::Base
 	belongs_to :author
 	
 	cattr_reader :per_page
-	@@per_page = 10
+	@@per_page = 10 
 	
 	private
 	  

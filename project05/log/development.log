@@ -40865,3 +40865,104 @@ Rendering authors/index
 Rendered layouts/_title (0.1ms)
 Rendered layouts/_flash (0.1ms)
 Completed in 106ms (View: 100, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 22:45:59) [GET]
+  [4;36;1mArticle Load (28.3ms)[0m   [0;1mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 0) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 0) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 0) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (35.6ms)
+Rendered layouts/_flash (32.2ms)
+Completed in 685ms (View: 623, DB: 30) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-20 22:46:06) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.collect) on line #9 of app/views/articles/_form.html.erb:
+6: </div>
+7: <div>
+8: 	<%= f.label :author_id %>
+9: 	<%= f.select :author_id, @authors.collect { |a| [a.name, a.id] }, :include_blank => true %>
+10: </div>
+11: <div>
+12: 	<%= f.label :body %>
+
+    app/views/articles/_form.html.erb:9
+    app/views/articles/new.html.erb:15
+    app/views/articles/new.html.erb:14
+
+Rendered rescues/_trace (124.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-20 22:46:18) [GET]
+  [4;35;1mAuthor Load (0.7ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Rendered articles/_form (6.3ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-20 22:46:20) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "author_id"=>""}, "commit"=>"Create!", "authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw="}
+Rendering template within layouts/application
+Rendering articles/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.collect) on line #9 of app/views/articles/_form.html.erb:
+6: </div>
+7: <div>
+8: 	<%= f.label :author_id %>
+9: 	<%= f.select :author_id, @authors.collect { |a| [a.name, a.id] }, :include_blank => true %>
+10: </div>
+11: <div>
+12: 	<%= f.label :body %>
+
+    app/views/articles/_form.html.erb:9
+    app/views/articles/new.html.erb:15
+    app/views/articles/new.html.erb:14
+    app/controllers/articles_controller.rb:29:in `create'
+
+Rendered rescues/_trace (122.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-20 22:46:32) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "author_id"=>""}, "commit"=>"Create!", "authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw="}
+  [4;36;1mAuthor Load (0.5ms)[0m   [0;1mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Rendered articles/_form (10.9ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 34ms (View: 17, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-20 22:52:26) [POST]
+  Parameters: {"article"=>{"body"=>"", "title"=>"", "author_id"=>""}, "commit"=>"Create!", "authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw="}
+  [4;35;1mAuthor Load (2.4ms)[0m   [0mSELECT * FROM "authors" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Rendered articles/_form (12.0ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 36ms (View: 19, DB: 3) | 200 OK [http://localhost/articles]

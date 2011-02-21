@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_filter :set_edit_return_url, :only => [:edit]
-  before_filter :load_authors, :only => [:new, :edit, :update]
+  before_filter :load_authors, :only => [:new, :create, :edit, :update]
   
   def index
     @articles = Article.paginate(:page => params[:page])
