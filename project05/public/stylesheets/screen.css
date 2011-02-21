@@ -144,13 +144,12 @@ a {
   font-size: 1.3em; }
 
 .article-body {
-  width: 700px; }
+  width: 800px; }
   .article-body p {
     color: #AAA;
     font-family: fantasy;
     margin: 40px 0px 0px 40px;
-    font-size: 16px;
-    width: 40px; }
+    font-size: 16px; }
 
 /* Styles for Links */
 .links-row {

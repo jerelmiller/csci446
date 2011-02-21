@@ -14,6 +14,5 @@
 .author
   %p
     by #{h @article.author.name}. #{pluralize(@article.update_count, 'edit')} since #{@article.created_at.strftime("%b. %d, %Y.")}
-  </div
   .article-body
     %p= h simple_format(@article.body)
