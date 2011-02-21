@@ -3,6 +3,7 @@ class AuthorsController < ApplicationController
   
   def index
     @authors = Author.paginate(:page => params[:page])
+    @num_authors = Author.count
   end
 
   def show

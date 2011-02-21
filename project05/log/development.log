@@ -42430,3 +42430,2444 @@ Rendering articles/index
 Rendered layouts/_title (0.1ms)
 Rendered layouts/_flash (0.2ms)
 Completed in 35ms (View: 29, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:09:25) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 12) [0m
+  [4;36;1mAuthor Load (0.1ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 36ms (View: 28, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:03) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"40"}
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 40) [0m
+  [4;36;1mArticle Destroy (0.4ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 40[0m
+Redirected to http://localhost:3000/articles
+Completed in 15ms (DB: 2) | 302 Found [http://localhost/articles/40]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:03) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;36;1mAuthor Load (0.1ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 104ms (View: 96, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:05) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"41"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 41) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 41[0m
+Redirected to http://localhost:3000/articles
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/articles/41]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:05) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;35;1mAuthor Load (0.1ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;36;1mAuthor Load (0.1ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 32ms (View: 26, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:08) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"42"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 42) [0m
+  [4;35;1mArticle Destroy (0.4ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 42[0m
+Redirected to http://localhost:3000/articles
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles/42]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:08) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mAuthor Load (0.1ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 103ms (View: 94, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:10) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"43"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 43) [0m
+  [4;36;1mArticle Destroy (0.6ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 43[0m
+Redirected to http://localhost:3000/articles
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/articles/43]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:11) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+  [4;36;1mAuthor Load (0.1ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:12) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"44"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 44) [0m
+  [4;36;1mArticle Destroy (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 44[0m
+Redirected to http://localhost:3000/articles
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/articles/44]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:13) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 1) [0m
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.3ms)
+Completed in 27ms (View: 19, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:16) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"45"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 45) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 45[0m
+Redirected to http://localhost:3000/articles
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/articles/45]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:16) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mAuthor Load (0.1ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:18) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"46"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 46) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 46[0m
+Redirected to http://localhost:3000/articles
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles/46]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:18) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:11:20) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"47"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 47) [0m
+  [4;36;1mArticle Destroy (0.4ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 47[0m
+Redirected to http://localhost:3000/articles
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/articles/47]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:11:20) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/articles]
+  [4;36;1mAuthor Create (0.5ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Lorem Illium', '2011-02-21 07:14:29', NULL, '2011-02-21 07:14:29', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at", "update_count", "author_id") VALUES('2011-02-21 07:14:29', 'Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non enim eget lacus dignissim sollicitudin vitae id erat. Fusce tortor ligula, lobortis a lobortis ac, cursus non lorem. Quisque non mauris leo. Sed aliquet augue ac orci pretium faucibus. Proin tristique pellentesque ultrices. Praesent convallis, sem et imperdiet fermentum, est dui consectetur metus, id pellentesque est erat nec lectus. Nunc quis dui leo, eu sodales lacus. Suspendisse potenti. Sed egestas sem a ante fringilla consequat. Cras tortor nibh, elementum eu sollicitudin a, bibendum eu dolor. Nullam posuere fermentum nunc, a egestas ipsum accumsan tincidunt.
+
+ Ut venenatis, mi at ultrices dictum, odio purus lacinia justo, et commodo massa nulla a orci. Integer ornare magna non sem fermentum nec gravida ligula accumsan. Integer ligula mauris, rutrum sed lobortis quis, facilisis vitae eros. Morbi sagittis fringilla lectus vestibulum fermentum. Integer turpis erat, eleifend vel pretium et, semper at magna. Nullam vulputate tortor nulla. Vestibulum quis augue nisi. Quisque congue purus eget justo condimentum vel volutpat metus egestas. Nullam laoreet lorem nec libero fermentum ac varius felis adipiscing. Mauris eu eros vel nibh tincidunt pellentesque. Aliquam pellentesque placerat orci, placerat placerat leo scelerisque non. Cras egestas tristique enim non placerat. Cras non purus at nunc mollis eleifend vel et nulla. Sed tincidunt, est faucibus blandit suscipit, felis odio lobortis erat, in ultricies nisi est eu justo. Etiam posuere massa sit amet est auctor a consectetur tortor volutpat.
+
+ Praesent eget augue ligula, et consequat urna. Quisque sed augue at velit vestibulum scelerisque commodo eu quam. Suspendisse ut erat ligula. Maecenas vestibulum risus ac massa posuere malesuada. Fusce nec risus sapien. Nullam gravida, mauris a gravida congue, sem ante vulputate elit, eget facilisis enim nulla eu dolor. Mauris ac tortor non dolor mattis ornare ac vitae libero. Phasellus ultricies mi vitae ligula vestibulum mollis. Sed rhoncus, eros sit amet dictum dignissim, arcu elit interdum sem, ac aliquam mi arcu ut justo. Donec et iaculis felis. Quisque porta porta nisi, vel dictum diam fringilla et. Pellentesque luctus dignissim ipsum, eget semper augue euismod quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras tortor leo, gravida sollicitudin porttitor et, egestas id turpis. Quisque pulvinar volutpat convallis. Maecenas vulputate sem eu dolor cursus vehicula viverra nec mi. Cras sapien sapien, volutpat ut fermentum at, vehicula sed erat.
+
+ Ut tempor pretium diam quis gravida. Vivamus eu enim nibh, nec interdum est. Proin semper suscipit arcu vitae mollis. Integer vitae arcu mauris. Proin sodales posuere gravida. Pellentesque ut felis velit, ut malesuada libero. Mauris porttitor massa et risus lacinia semper. Quisque at justo magna, ac pretium mi. Donec non tortor id diam faucibus rutrum ut quis erat. Etiam consequat laoreet eleifend. Nulla elit ante, tempus sit amet bibendum et, cursus sit amet tellus. Nulla ultricies lorem nec mauris suscipit pharetra. Cras a quam id massa lobortis malesuada. Vivamus at lacinia arcu. Fusce pellentesque ante eu arcu tempor id tristique nisl gravida. Morbi fermentum, leo sit amet vehicula egestas, urna sem dapibus nisl, eget aliquet eros arcu a neque. Nunc sodales eleifend nunc non fringilla. Vestibulum fermentum faucibus egestas. Vestibulum consequat odio et neque luctus mollis.
+
+ Phasellus sed velit odio, et feugiat dolor. Nullam quis condimentum tellus. Phasellus a eros nibh. Vestibulum erat urna, volutpat sit amet condimentum et, euismod tincidunt leo. Vestibulum sodales aliquam purus quis tincidunt. Nulla ac leo risus, eu cursus magna. Vestibulum suscipit varius turpis, sit amet congue arcu ullamcorper vitae. Sed venenatis dignissim varius. Suspendisse hendrerit vehicula nibh venenatis ullamcorper. Aenean blandit feugiat tellus, in ultrices libero porttitor nec. In condimentum tempor dui non vehicula. Integer et elementum tellus. Proin adipiscing tempus urna in euismod.', '2011-02-21 07:14:29', 0, 25)[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at", "update_count", "author_id") VALUES('2011-02-21 07:14:29', 'The Invisible Man', 'Zepto duonhoro kio ul, bo zorgi reciprokeco lia. Oble kvanta diskriminacio ko mis, kie triangulo punktokomo postesigno ke, cento poste dua e. Frota apostrofo malantaŭa tro fo, ve eko minca deksesuma. Nenia iufoje nk vol.
+
+ Alies minimume daralbajdo vic os, devi makro respondeci tiu de. Ree ti povus maksimume, nur finno esceptinte oj. Io dev estro konjunkcio, ja preterito senobjekta log. Ore faka devi ok. End jaro pentekosto em.
+
+ Sin dekono eksploda re, speco krome frazenkondukilo sep ar, fundamenta kazablanko malprofitanto hu sur. Da sor orda ilion septiliono. Tie dekoj frato ac, pebi nedifina finaĵvorto en pre. Nei ba land stif elrigardi, sia kian fundamento tempopunkto uk, avo fari gramatika il. Vir ho afro kunigi, ies pere amen tien ot, tempismo fratineto kvintiliono sed om.', '2011-02-21 07:14:29', 0, 2)[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at", "update_count", "author_id") VALUES('2011-02-21 07:14:29', 'The Biggest Mistake Ever', 'The biggest mistake ever was writing this article', '2011-02-21 07:14:29', 0, 3)[0m
+  [4;36;1mAuthor Create (0.3ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Pablo Picasso', '2011-02-21 07:14:29', NULL, '2011-02-21 07:14:29', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mAuthor Create (0.3ms)[0m   [0mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Johnathon Skinner', '2011-02-21 07:14:29', NULL, '2011-02-21 07:14:29', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;36;1mAuthor Create (0.3ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Pupu McGruber', '2011-02-21 07:14:29', NULL, '2011-02-21 07:14:29', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mAuthor Create (0.2ms)[0m   [0mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Ben the Beggar', '2011-02-21 07:14:29', NULL, '2011-02-21 07:14:29', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:14:31) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 25) [0m
+  [4;36;1mAuthor Load (0.1ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:15:37) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"48"}
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 48) [0m
+  [4;35;1mArticle Destroy (0.4ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 48[0m
+Redirected to http://localhost:3000/articles
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/articles/48]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:15:37) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 2) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:15:39) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"49"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 49) [0m
+  [4;35;1mArticle Destroy (0.6ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 49[0m
+Redirected to http://localhost:3000/articles
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles/49]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:15:39) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 3) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 90ms (View: 12, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2011-02-21 00:15:43) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"50"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 50) [0m
+  [4;36;1mArticle Destroy (0.4ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 50[0m
+Redirected to http://localhost:3000/articles
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/articles/50]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:15:43) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/articles]
+  [4;36;1mAuthor Create (0.4ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Lorem Illium', '2011-02-21 07:15:54', NULL, '2011-02-21 07:15:54', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at", "update_count", "author_id") VALUES('2011-02-21 07:15:54', 'Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non enim eget lacus dignissim sollicitudin vitae id erat. Fusce tortor ligula, lobortis a lobortis ac, cursus non lorem. Quisque non mauris leo. Sed aliquet augue ac orci pretium faucibus. Proin tristique pellentesque ultrices. Praesent convallis, sem et imperdiet fermentum, est dui consectetur metus, id pellentesque est erat nec lectus. Nunc quis dui leo, eu sodales lacus. Suspendisse potenti. Sed egestas sem a ante fringilla consequat. Cras tortor nibh, elementum eu sollicitudin a, bibendum eu dolor. Nullam posuere fermentum nunc, a egestas ipsum accumsan tincidunt.
+
+ Ut venenatis, mi at ultrices dictum, odio purus lacinia justo, et commodo massa nulla a orci. Integer ornare magna non sem fermentum nec gravida ligula accumsan. Integer ligula mauris, rutrum sed lobortis quis, facilisis vitae eros. Morbi sagittis fringilla lectus vestibulum fermentum. Integer turpis erat, eleifend vel pretium et, semper at magna. Nullam vulputate tortor nulla. Vestibulum quis augue nisi. Quisque congue purus eget justo condimentum vel volutpat metus egestas. Nullam laoreet lorem nec libero fermentum ac varius felis adipiscing. Mauris eu eros vel nibh tincidunt pellentesque. Aliquam pellentesque placerat orci, placerat placerat leo scelerisque non. Cras egestas tristique enim non placerat. Cras non purus at nunc mollis eleifend vel et nulla. Sed tincidunt, est faucibus blandit suscipit, felis odio lobortis erat, in ultricies nisi est eu justo. Etiam posuere massa sit amet est auctor a consectetur tortor volutpat.
+
+ Praesent eget augue ligula, et consequat urna. Quisque sed augue at velit vestibulum scelerisque commodo eu quam. Suspendisse ut erat ligula. Maecenas vestibulum risus ac massa posuere malesuada. Fusce nec risus sapien. Nullam gravida, mauris a gravida congue, sem ante vulputate elit, eget facilisis enim nulla eu dolor. Mauris ac tortor non dolor mattis ornare ac vitae libero. Phasellus ultricies mi vitae ligula vestibulum mollis. Sed rhoncus, eros sit amet dictum dignissim, arcu elit interdum sem, ac aliquam mi arcu ut justo. Donec et iaculis felis. Quisque porta porta nisi, vel dictum diam fringilla et. Pellentesque luctus dignissim ipsum, eget semper augue euismod quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras tortor leo, gravida sollicitudin porttitor et, egestas id turpis. Quisque pulvinar volutpat convallis. Maecenas vulputate sem eu dolor cursus vehicula viverra nec mi. Cras sapien sapien, volutpat ut fermentum at, vehicula sed erat.
+
+ Ut tempor pretium diam quis gravida. Vivamus eu enim nibh, nec interdum est. Proin semper suscipit arcu vitae mollis. Integer vitae arcu mauris. Proin sodales posuere gravida. Pellentesque ut felis velit, ut malesuada libero. Mauris porttitor massa et risus lacinia semper. Quisque at justo magna, ac pretium mi. Donec non tortor id diam faucibus rutrum ut quis erat. Etiam consequat laoreet eleifend. Nulla elit ante, tempus sit amet bibendum et, cursus sit amet tellus. Nulla ultricies lorem nec mauris suscipit pharetra. Cras a quam id massa lobortis malesuada. Vivamus at lacinia arcu. Fusce pellentesque ante eu arcu tempor id tristique nisl gravida. Morbi fermentum, leo sit amet vehicula egestas, urna sem dapibus nisl, eget aliquet eros arcu a neque. Nunc sodales eleifend nunc non fringilla. Vestibulum fermentum faucibus egestas. Vestibulum consequat odio et neque luctus mollis.
+
+ Phasellus sed velit odio, et feugiat dolor. Nullam quis condimentum tellus. Phasellus a eros nibh. Vestibulum erat urna, volutpat sit amet condimentum et, euismod tincidunt leo. Vestibulum sodales aliquam purus quis tincidunt. Nulla ac leo risus, eu cursus magna. Vestibulum suscipit varius turpis, sit amet congue arcu ullamcorper vitae. Sed venenatis dignissim varius. Suspendisse hendrerit vehicula nibh venenatis ullamcorper. Aenean blandit feugiat tellus, in ultrices libero porttitor nec. In condimentum tempor dui non vehicula. Integer et elementum tellus. Proin adipiscing tempus urna in euismod.', '2011-02-21 07:15:54', 0, 30)[0m
+  [4;36;1mAuthor Create (0.3ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Hugh Go', '2011-02-21 07:15:54', NULL, '2011-02-21 07:15:54', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at", "update_count", "author_id") VALUES('2011-02-21 07:15:54', 'The Invisible Man', 'Zepto duonhoro kio ul, bo zorgi reciprokeco lia. Oble kvanta diskriminacio ko mis, kie triangulo punktokomo postesigno ke, cento poste dua e. Frota apostrofo malantaŭa tro fo, ve eko minca deksesuma. Nenia iufoje nk vol.
+
+ Alies minimume daralbajdo vic os, devi makro respondeci tiu de. Ree ti povus maksimume, nur finno esceptinte oj. Io dev estro konjunkcio, ja preterito senobjekta log. Ore faka devi ok. End jaro pentekosto em.
+
+ Sin dekono eksploda re, speco krome frazenkondukilo sep ar, fundamenta kazablanko malprofitanto hu sur. Da sor orda ilion septiliono. Tie dekoj frato ac, pebi nedifina finaĵvorto en pre. Nei ba land stif elrigardi, sia kian fundamento tempopunkto uk, avo fari gramatika il. Vir ho afro kunigi, ies pere amen tien ot, tempismo fratineto kvintiliono sed om.', '2011-02-21 07:15:54', 0, 31)[0m
+  [4;36;1mAuthor Create (0.3ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Ben Dover', '2011-02-21 07:15:54', NULL, '2011-02-21 07:15:54', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at", "update_count", "author_id") VALUES('2011-02-21 07:15:54', 'The Biggest Mistake Ever', 'The biggest mistake ever was writing this article', '2011-02-21 07:15:54', 0, 32)[0m
+  [4;36;1mAuthor Create (0.3ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Pablo Picasso', '2011-02-21 07:15:54', NULL, '2011-02-21 07:15:54', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mAuthor Create (0.3ms)[0m   [0mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Johnathon Skinner', '2011-02-21 07:15:54', NULL, '2011-02-21 07:15:54', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;36;1mAuthor Create (0.3ms)[0m   [0;1mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Pupu McGruber', '2011-02-21 07:15:54', NULL, '2011-02-21 07:15:54', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mAuthor Create (0.3ms)[0m   [0mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Ben the Beggar', '2011-02-21 07:15:54', NULL, '2011-02-21 07:15:54', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 00:15:56) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 30) [0m
+  [4;36;1mAuthor Load (0.1ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 31) [0m
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 32) [0m
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:15:59) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.2ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 94ms (View: 87, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:01) [GET]
+  Parameters: {"page"=>"3"}
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 20[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/authors?page=3]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:05) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mAuthor Load (0.8ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 10[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/authors?page=2]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:07) [GET]
+  Parameters: {"page"=>"3"}
+  [4;35;1mAuthor Load (0.7ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 20[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/authors?page=3]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:15) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"29"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 29) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.4ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 29[0m
+Redirected to http://localhost:3000/authors
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/authors/29]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:15) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 101ms (View: 19, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:18) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"9"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 9) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (1.9ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/authors
+Completed in 17ms (DB: 3) | 302 Found [http://localhost/authors/9]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:18) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:20) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"10"}
+  [4;36;1mAuthor Load (0.4ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 10) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.6ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/authors/10]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:20) [GET]
+  [4;36;1mAuthor Load (0.9ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.2ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:22) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"11"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 11) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/authors/11]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:22) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:24) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"12"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 12) [0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/Jerel/Documents/cs446/src/project05/public/assets/authors/photos/12/original/logo_realstuff.jpg
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/authors
+Completed in 21ms (DB: 2) | 302 Found [http://localhost/authors/12]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:24) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:26) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"13"}
+  [4;36;1mAuthor Load (0.4ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 13) [0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/Jerel/Documents/cs446/src/project05/public/assets/authors/photos/13/original/logo_realstuff.jpg
+  [4;35;1mAuthor Destroy (0.5ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/authors
+Completed in 22ms (DB: 2) | 302 Found [http://localhost/authors/13]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:26) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:28) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"14"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 14) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.4ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 14[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/authors/14]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:29) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:31) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"15"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 15) [0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/Jerel/Documents/cs446/src/project05/public/assets/authors/photos/15/original/logo_realstuff.png
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 15[0m
+Redirected to http://localhost:3000/authors
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/authors/15]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:31) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 97ms (View: 90, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:33) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"16"}
+  [4;36;1mAuthor Load (0.4ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 16) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.7ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 16[0m
+Redirected to http://localhost:3000/authors
+Completed in 16ms (DB: 3) | 302 Found [http://localhost/authors/16]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:33) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:35) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"17"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 17) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 17[0m
+Redirected to http://localhost:3000/authors
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/authors/17]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:35) [GET]
+  [4;36;1mAuthor Load (0.9ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 28ms (View: 19, DB: 2) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:37) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"18"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 18) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 18[0m
+Redirected to http://localhost:3000/authors
+Completed in 94ms (DB: 2) | 302 Found [http://localhost/authors/18]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:37) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:40) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"19"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 19) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 19[0m
+Redirected to http://localhost:3000/authors
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/authors/19]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:40) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:42) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"20"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 20) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 20[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/authors/20]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:42) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 97ms (View: 18, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:45) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"21"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 21) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.7ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 21[0m
+Redirected to http://localhost:3000/authors
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/authors/21]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:45) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:47) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"22"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 22) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 22[0m
+Redirected to http://localhost:3000/authors
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/authors/22]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:47) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:50) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"23"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 23) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.3ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 23[0m
+Redirected to http://localhost:3000/authors
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/authors/23]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:50) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:52) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"24"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 24) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.4ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 24[0m
+Redirected to http://localhost:3000/authors
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/authors/24]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:52) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:54) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"25"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 25) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.4ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 25[0m
+Redirected to http://localhost:3000/authors
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/authors/25]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:54) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:16:57) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"26"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 26) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.4ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 26[0m
+Redirected to http://localhost:3000/authors
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/authors/26]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:16:57) [GET]
+  [4;36;1mAuthor Load (0.8ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:00) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"27"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 27) [0m
+[paperclip] Deleting attachments.
+  [4;36;1mAuthor Destroy (0.4ms)[0m   [0;1mDELETE FROM "authors" WHERE "id" = 27[0m
+Redirected to http://localhost:3000/authors
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/authors/27]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:00) [GET]
+  [4;35;1mAuthor Load (0.7ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:02) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"28"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 28) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.6ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 28[0m
+Redirected to http://localhost:3000/authors
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/authors/28]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:02) [GET]
+  [4;36;1mAuthor Load (0.7ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:05) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"30"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 30) [0m
+[paperclip] Deleting attachments.
+  [4;36;1mAuthor Destroy (0.5ms)[0m   [0;1mDELETE FROM "authors" WHERE "id" = 30[0m
+Redirected to http://localhost:3000/authors
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/authors/30]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:05) [GET]
+  [4;35;1mAuthor Load (0.7ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:07) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"31"}
+  [4;36;1mAuthor Load (0.4ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 31) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.5ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 31[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/authors/31]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:07) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 89ms (View: 83, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:09) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"32"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 32) [0m
+[paperclip] Deleting attachments.
+  [4;36;1mAuthor Destroy (0.4ms)[0m   [0;1mDELETE FROM "authors" WHERE "id" = 32[0m
+Redirected to http://localhost:3000/authors
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/authors/32]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:10) [GET]
+  [4;35;1mAuthor Load (0.6ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.3ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:12) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"33"}
+  [4;36;1mAuthor Load (0.3ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 33) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.4ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 33[0m
+Redirected to http://localhost:3000/authors
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/authors/33]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:12) [GET]
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:14) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"34"}
+  [4;35;1mAuthor Load (0.2ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 34) [0m
+[paperclip] Deleting attachments.
+  [4;36;1mAuthor Destroy (1.3ms)[0m   [0;1mDELETE FROM "authors" WHERE "id" = 34[0m
+Redirected to http://localhost:3000/authors
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/authors/34]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:14) [GET]
+  [4;35;1mAuthor Load (0.5ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 88ms (View: 9, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:16) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"35"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 35) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.5ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 35[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/authors/35]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:16) [GET]
+  [4;36;1mAuthor Load (0.5ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:17:19) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"36"}
+  [4;35;1mAuthor Load (0.3ms)[0m   [0mSELECT * FROM "authors" WHERE ("authors"."id" = 36) [0m
+[paperclip] Deleting attachments.
+  [4;36;1mAuthor Destroy (0.3ms)[0m   [0;1mDELETE FROM "authors" WHERE "id" = 36[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/authors/36]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:17:19) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:18:05) [GET]
+  [4;36;1mAuthor Load (0.5ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+ERROR: compiling _run_haml_app47views47authors47index46html46haml RAISED compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47authors47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;; content_for :subtitle do;
+_hamlout.push_text("...choking out Wikipedia...one word at a time\n", 0, false);
+end;_hamlout.push_text("<div id='author-add-table-title'>\n  <div id='table-title'>\n    <h2>All the World's Authors</h2>\n  </div>\n</div>\n#{
+
+
+_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @authors
+));}\n#{
+_hamlout.format_script_false_false_false_false_false_true_false(( if @authors.count > 0
+));}\n<div class='author-list'>\n  <table>\n    <tr id='titles'>\n      <td width='120px'>Author</td>\n    </tr>\n", 2, false);
+
+
+
+ @authors.each do |author|;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-line-odd', 'list-line-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h author.name
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n", -1, false);end;_hamlout.push_text("  </table>\n</div>\n<div id='create-author'>\n  #{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: = if @authors.count > 0
+9: .author-list
+10:   %table
+11:     %tr#titles
+12:       %td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:21:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (113.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:18:19) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:18:34) [GET]
+  [4;36;1mAuthor Load (0.4ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+ERROR: compiling _run_haml_app47views47authors47index46html46haml RAISED compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47authors47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;; content_for :subtitle do;
+_hamlout.push_text("...choking out Wikipedia...one word at a time\n", 0, false);
+end;_hamlout.push_text("<div id='author-add-table-title'>\n  <div id='table-title'>\n    <h2>All the World's Authors</h2>\n  </div>\n</div>\n#{
+
+
+_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @authors
+));}\n#{
+_hamlout.format_script_false_false_false_false_false_true_false(( if @authors
+));}\n<div class='author-list'>\n  <table>\n    <tr id='titles'>\n      <td width='120px'>Author</td>\n    </tr>\n", 2, false);
+
+
+
+ @authors.each do |author|;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-line-odd', 'list-line-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h author.name
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n", -1, false);end;_hamlout.push_text("  </table>\n</div>\n<div id='create-author'>\n  #{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: = if @authors
+9: .author-list
+10:   %table
+11:     %tr#titles
+12:       %td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:21:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (120.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:19:19) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+ERROR: compiling _run_haml_app47views47authors47index46html46haml RAISED compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47authors47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;; content_for :subtitle do;
+_hamlout.push_text("...choking out Wikipedia...one word at a time\n", 0, false);
+end;_hamlout.push_text("<div id='author-add-table-title'>\n  <div id='table-title'>\n    <h2>All the World's Authors</h2>\n  </div>\n</div>\n#{
+
+
+_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @authors
+));}\n#{
+_hamlout.format_script_false_false_false_false_false_true_false(( if @authors.count > 0
+));}\n<div class='author-list'>\n  <table>\n    <tr id='titles'>\n      <td width='120px'>Author</td>\n    </tr>\n", 2, false);
+
+
+
+ @authors.each do |author|;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-line-odd', 'list-line-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h author.name
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n", -1, false);end;_hamlout.push_text("  </table>\n</div>\n<div id='create-author'>\n  #{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: = if @authors.count > 0
+9: .author-list
+10:   %table
+11:     %tr#titles
+12:       %td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:21:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:19:44) [GET]
+  [4;36;1mAuthor Load (0.5ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 96ms (View: 90, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:20:55) [GET]
+  [4;35;1mAuthor Load (0.5ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:21:05) [GET]
+  [4;35;1mAuthor Load (0.5ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+ERROR: compiling _run_haml_app47views47authors47index46html46haml RAISED compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47authors47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;; content_for :subtitle do;
+_hamlout.push_text("...choking out Wikipedia...one word at a time\n", 0, false);
+end;_hamlout.push_text("<div id='author-add-table-title'>\n  <div id='table-title'>\n    <h2>All the World's Authors</h2>\n  </div>\n</div>\n#{
+
+
+_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @authors
+));}\n#{
+_hamlout.format_script_false_false_false_false_false_true_false(( if @num_authors > 0
+));}\n<div class='author-list'>\n  <table>\n    <tr id='titles'>\n      <td width='120px'>Author</td>\n    </tr>\n", 2, false);
+
+
+
+ @authors.each do |author|;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-line-odd', 'list-line-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h author.name
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n", -1, false);end;_hamlout.push_text("  </table>\n</div>\n<div id='create-author'>\n  #{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected ')'
+));}\n<div class='author-list'>...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n<div class='author-list'>\n  <table>\n  ...
+                ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...;}\n<div class='author-list'>\n  <table>\n    <tr id='titles...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...ass='author-list'>\n  <table>\n    <tr id='titles'>\n      <...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...-list'>\n  <table>\n    <tr id='titles'>\n      <td width='1...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...<table>\n    <tr id='titles'>\n      <td width='120px'>Autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='titles'>\n      <td width='120px'>Author</td>\n    </tr...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: unknown regexp options - tr
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:9: syntax error, unexpected $undefined
+...120px'>Author</td>\n    </tr>\n", 2, false);
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+_hamlout.open_tag("tr", false, false, false, false,...
+                     ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:16: syntax error, unexpected '}', expecting kEND
+));}</td>\n      <td class='icons'...
+    ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected $undefined
+));}</td>\n      <td class='icons'>#{_ha...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tab...
+                          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:18: syntax error, unexpected ')'
+));}</td>\n      <td class='ico...
+ ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - td
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end;...
+          ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unknown regexp options - tabl
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: unmatched ): /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:19: syntax error, unexpected $undefined
+...hamlout.push_text("  </table>\n</div>\n<div id='create-autho...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unknown regexp options - dv
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: unterminated string meets end of file
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected $end, expecting kEND) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: = if @num_authors > 0
+9: .author-list
+10:   %table
+11:     %tr#titles
+12:       %td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:21:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:21:41) [GET]
+  [4;35;1mAuthor Load (0.5ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: = if @num_authors > 0
+9: 	.author-list
+10:   	%table
+11:     	%tr#titles
+12:       	%td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:9
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:389:in `push_script'
+    haml (3.0.25) lib/haml/precompiler.rb:224:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:22:33) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: = if @num_authors > 0
+9: 	.author-list
+10:   		%table
+11:     		%tr#titles
+12:       			%td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:9
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:389:in `push_script'
+    haml (3.0.25) lib/haml/precompiler.rb:224:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (125.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:22:48) [GET]
+  [4;35;1mAuthor Load (0.5ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: - if @num_authors > 0
+9: 	.author-list
+10:   		%table
+11:     		%tr#titles
+12:       			%td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:9
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:246:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (128.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:22:48) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.) on line #9 of app/views/authors/index.html.haml:
+6: = will_paginate @authors
+7: 
+8: - if @num_authors > 0
+9: 	.author-list
+10:   		%table
+11:     		%tr#titles
+12:       			%td{:width => "120px"} Author
+
+    app/views/authors/index.html.haml:9
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:246:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:22:55) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+
+ActionView::TemplateError (Inconsistent indentation: "  \t\t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #10 of app/views/authors/index.html.haml:
+7: 
+8: - if @num_authors > 0
+9: .author-list
+10:   		%table
+11:     		%tr#titles
+12:       			%td{:width => "120px"} Author
+13:     			- @authors.each do |author|
+
+    app/views/authors/index.html.haml:10
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:776:in `render_tag'
+    haml (3.0.25) lib/haml/precompiler.rb:845:in `render_div'
+    haml (3.0.25) lib/haml/precompiler.rb:210:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:24:05) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+
+ActionView::TemplateError (Inconsistent indentation: "    \t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #13 of app/views/authors/index.html.haml:
+10:   %table
+11:     %tr#titles
+12:       %td{:width => "120px"} Author
+13:     	- @authors.each do |author|
+14:     %tr{:class => cycle('list-line-odd', 'list-line-even')}
+15:       %td= h author.name
+16:       %td.icons= link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+
+    app/views/authors/index.html.haml:13
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:776:in `render_tag'
+    haml (3.0.25) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (126.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:24:19) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+ERROR: compiling _run_haml_app47views47authors47index46html46haml RAISED compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected kENSURE, expecting kEND
+...\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:24: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47authors47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;; content_for :subtitle do;
+_hamlout.push_text("...choking out Wikipedia...one word at a time\n", 0, false);
+end;_hamlout.push_text("<div id='author-add-table-title'>\n  <div id='table-title'>\n    <h2>All the World's Authors</h2>\n  </div>\n</div>\n#{
+
+
+_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @authors
+));}\n", 0, false);
+ if @num_authors > 0;
+end;_hamlout.push_text("<div class='author-list'>\n  <table>\n    <tr id='titles'>\n      <td width='120px'>Author</td>\n    </tr>\n", 2, false);
+
+
+
+ @authors.each do |author|;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-line-odd', 'list-line-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h author.name
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n  </table>\n</div>\n<div id='create-author'>\n  #{
+_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_false_false_true_false(( link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:24:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected kENSURE, expecting kEND
+...\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:24: syntax error, unexpected $end, expecting kEND) on line #21 of app/views/authors/index.html.haml:
+18:       %td.icons= link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+19: #create-author
+20:   = link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+
+    app/views/authors/index.html.haml:24:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:24:34) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+ERROR: compiling _run_haml_app47views47authors47index46html46haml RAISED compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected kENSURE, expecting kEND
+...\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:24: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47authors47index46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;; content_for :subtitle do;
+_hamlout.push_text("...choking out Wikipedia...one word at a time\n", 0, false);
+end;_hamlout.push_text("<div id='author-add-table-title'>\n  <div id='table-title'>\n    <h2>All the World's Authors</h2>\n  </div>\n</div>\n#{
+
+
+_hamlout.format_script_false_false_false_false_false_true_false(( will_paginate @authors
+));}\n<div class='author-list'>\n  <table>\n    <tr id='titles'>\n      <td width='120px'>Author</td>\n    </tr>\n", 2, false);
+
+
+
+
+
+ @authors.each do |author|;
+_hamlout.open_tag("tr", false, false, false, false, {}, false, false, nil, nil, :class => cycle('list-line-odd', 'list-line-even'));_hamlout.push_text("      <td>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h author.name
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
+));}</td>\n      <td class='icons'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    </tr>\n  </table>\n</div>\n<div id='create-author'>\n  #{
+_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_false_false_true_false(( link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:24:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/abstract_store.rb:177:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:21: syntax error, unexpected kENSURE, expecting kEND
+...\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/Users/Jerel/Documents/cs446/src/project05/app/views/authors/index.html.haml:24: syntax error, unexpected $end, expecting kEND) on line #21 of app/views/authors/index.html.haml:
+18:       %td.icons= link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+19: #create-author
+20:   = link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
+
+    app/views/authors/index.html.haml:24:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:25:02) [GET]
+  [4;35;1mAuthor Load (0.4ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:27:35) [GET]
+  [4;35;1mAuthor Load (0.5ms)[0m   [0mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#new (for 127.0.0.1 at 2011-02-21 00:27:37) [GET]
+Rendering template within layouts/application
+Rendering authors/new
+Rendered authors/_form (4.6ms)
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.1ms)
+Completed in 94ms (View: 16, DB: 0) | 200 OK [http://localhost/authors/new]
+
+
+Processing AuthorsController#create (for 127.0.0.1 at 2011-02-21 00:27:42) [POST]
+  Parameters: {"commit"=>"Create!", "author"=>{"name"=>"Pablo"}, "authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw="}
+  [4;35;1mAuthor Create (0.4ms)[0m   [0mINSERT INTO "authors" ("name", "created_at", "photo_file_size", "updated_at", "photo_file_name", "photo_content_type", "photo_updated_at") VALUES('Pablo', '2011-02-21 07:27:42', NULL, '2011-02-21 07:27:42', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/authors
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:27:42) [GET]
+  [4;36;1mAuthor Load (0.5ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#destroy (for 127.0.0.1 at 2011-02-21 00:27:47) [DELETE]
+  Parameters: {"authenticity_token"=>"9o4QhD9CUt06/uQ7xfPcCD1ow5AcwNI+iVOGVlfI3Fw=", "id"=>"37"}
+  [4;36;1mAuthor Load (0.2ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors"."id" = 37) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAuthor Destroy (0.4ms)[0m   [0mDELETE FROM "authors" WHERE "id" = 37[0m
+Redirected to http://localhost:3000/authors
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/authors/37]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2011-02-21 00:27:47) [GET]
+  [4;36;1mAuthor Load (0.4ms)[0m   [0;1mSELECT * FROM "authors" LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "authors" [0m
+Rendering template within layouts/application
+Rendering authors/index
+Rendered layouts/_title (0.1ms)
+Rendered layouts/_flash (0.2ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/authors]

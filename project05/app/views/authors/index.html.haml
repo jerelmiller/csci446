@@ -4,15 +4,17 @@
   #table-title
     %h2 All the World's Authors
 = will_paginate @authors
-.author-list
-  %table
-    %tr#titles
-      %td{:width => "120px"} Author
-    - @authors.each do |author|
-      %tr{:class => cycle('list-line-odd', 'list-line-even')}
-        %td= h author.name
-        %td.icons= link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
-        %td.icons= link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
-        %td.icons= link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
+
+- if @num_authors > 0
+  .author-list
+    %table
+      %tr#titles
+        %td{:width => "120px"} Author
+      - @authors.each do |author|
+        %tr{:class => cycle('list-line-odd', 'list-line-even')}
+          %td= h author.name
+          %td.icons= link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Author', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), author
+          %td.icons= link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Author', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_author_path(author)
+          %td.icons= link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Author', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), author, :confirm => 'Are you sure?', :method => :delete
 #create-author
   = link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Author')) + "Add an Author", new_author_path, {:title => 'Add Author'}
