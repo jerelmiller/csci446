@@ -1,0 +1,10 @@
+= f.error_messages
+%div
+  = f.label :title
+  = f.text_field :title
+%div
+  = f.label :author_id
+  = f.select :author_id, @authors.collect { |a| [a.name, a.id] }, :include_blank => true
+%div
+  = f.label :body
+  = f.text_area :body

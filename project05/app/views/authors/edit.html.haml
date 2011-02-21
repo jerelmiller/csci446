@@ -1,0 +1,11 @@
+- content_for :subtitle do
+  \...NYTimes and Time Magazine...all rolled into one
+%div
+  = link_to (image_tag('/images/back.png', :border => 0, :title => "Back", :class => 'icon-reposition')) + "back", :back, 	{:title => "Back"}
+.subtitle
+  %h1 Editing Author
+.article-form
+  - form_for(@author, :html => {:multipart => true}) do |f|
+    = render :partial => 'form', :locals => {:f => f}
+    %div
+      = f.submit 'Save Changes'

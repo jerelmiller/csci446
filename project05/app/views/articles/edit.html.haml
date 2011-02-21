@@ -1,0 +1,12 @@
+- content_for :subtitle do
+  \...bit.ly says that he misses you
+%div
+  = link_to (image_tag('/images/back.png', :border => 0, :title => "Back", :class => 'icon-reposition')) + "back", :back, {:title => "Back"}
+.subtitle
+  %h1
+    Editing "#{@article.title}"
+.article-form
+  - form_for(@article) do |f|
+    = render :partial => 'form', :locals => {:f => f}
+    %div
+      = f.submit 'Save Changes'

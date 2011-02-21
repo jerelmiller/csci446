@@ -1,4 +1,5 @@
 /* Global Styles */
+
 body {
   background: #37414A; }
 
@@ -12,13 +13,13 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #777; }
-  a:visited {
+  color: #777;
+  &:visited {
     color: #777; }
-  a:hover {
+  &:hover {
     font-size: 1.2em;
     background: none;
-    color: #AAA; }
+    color: #AAA; } }
 
 .icon-reposition {
   position: relative;
@@ -26,22 +27,23 @@ a {
   margin-right: 5px; }
 
 /* Styles for Main Title */
+
 .roundedcornr_box {
-  background: #37414a url(/images/roundedcornr_grad.gif) no-repeat;
-  width: 600px;
-  height: 80px; }
-  .roundedcornr_box h1 {
+  h1 {
     text-align: center;
     font: bold italic;
     color: #AAA;
     font-size: 3em;
     font-family: "Courier New"; }
-  .roundedcornr_box h4 {
+  h4 {
     text-align: center;
     color: #999;
     position: relative;
     left: 25%;
     font-family: "Courier New"; }
+  background: #37414a url(/images/roundedcornr_grad.gif) no-repeat;
+  width: 600px;
+  height: 80px; }
 
 .roundedcornr_top div {
   background: transparent url(/images/roundedcornr_tl.gif) no-repeat top left; }
@@ -52,13 +54,13 @@ a {
   top: -65px; }
 
 .roundedcornr_top, .roundedcornr_bottom {
-  width: 100%;
-  height: 20px;
-  font-size: 1px; }
-  .roundedcornr_top div, .roundedcornr_bottom div {
+  div {
     width: 100%;
     height: 20px;
     font-size: 1px; }
+  width: 100%;
+  height: 20px;
+  font-size: 1px; }
 
 .roundedcornr_content {
   margin: 0 30px;
@@ -72,6 +74,7 @@ a {
   left: 27%; }
 
 /* Styles for Article Listing */
+
 #create-article {
   float: right;
   position: relative;
@@ -83,13 +86,13 @@ a {
 .article-list {
   width: 96%;
   margin: 0px 0px 40px 20px;
-  padding: 0px 20px 0px 0px; }
-  .article-list #titles {
+  padding: 0px 20px 0px 0px;
+  #titles {
     background-color: #666;
     color: #AAA; }
-  .article-list td {
+  td {
     padding: 0px 5px 0px 5px;
-    height: 37px; }
+    height: 37px; } }
 
 .icons {
   background: #37414A;
@@ -102,15 +105,17 @@ a {
   background: #AAA; }
 
 /* Style for article count */
+
 .article-count {
   font-size: 1.5em;
   color: #AAA;
   font-family: fantasy; }
 
 /* Styles for Article Form */
+
 .article-form {
-  margin: 50px 20px 20px 35px; }
-  .article-form label {
+  margin: 50px 20px 20px 35px;
+  label {
     color: #AAA;
     font-family: "Courier New";
     float: left;
@@ -119,11 +124,11 @@ a {
     margin-right: .5em;
     width: 5em;
     font-size: 1.2em; }
-  .article-form div {
+  div {
     margin: 20px 0px 0px 10px; }
-  .article-form #article_submit {
+  #article_submit {
     position: relative;
-    left: 85px; }
+    left: 85px; } }
 
 .subtitle {
   font-family: fantasy;
@@ -131,6 +136,7 @@ a {
   margin: 50px 0px 0px 20px; }
 
 /* Styles for View Article Page */
+
 .article-title {
   color: #AAA;
   margin: 80px 0px 20px 40px;
@@ -144,15 +150,16 @@ a {
   font-size: 1.3em; }
 
 .article-body {
-  width: 700px; }
-  .article-body p {
+  width: 700px;
+  p {
     color: #AAA;
     font-family: fantasy;
     margin: 40px 0px 0px 40px;
     font-size: 16px;
-    width: 40px; }
+    width: 40px; } }
 
 /* Styles for Links */
+
 .links-row {
   margin: 50px 0px 10px 40px;
   width: 600px;
@@ -175,6 +182,7 @@ a {
   width: 170px; }
 
 /* Style for Notices */
+
 .notice {
   color: #AAA;
   font-size: 2em;
@@ -183,41 +191,44 @@ a {
   margin: 30px 40px 0px 200px; }
 
 /* Styles for flash */
+
 .flash {
   margin: 40px 0px 10px 40px;
   width: 400px;
-  text-align: center; }
-  .flash p {
+  text-align: center;
+  p {
     margin: 0px;
     padding: 1em; }
-  .flash.success {
+  &.success {
     border: 1px solid #090;
     color: #060;
     background: #F0FFF0; }
-  .flash.error {
+  &.error {
     border: 1px solid #900;
     color: #900;
-    background: #FFF0F0; }
+    background: #FFF0F0; } }
 
 /* Styles for menubar */
+
 ul.menubar {
   list-style-type: none;
   margin: 50px 100px 0px 40px;
   padding: 10px;
-  text-align: center; }
-  ul.menubar li {
+  text-align: center;
+  li {
     display: inline;
     margin: 0px 100px 0px 100px;
     color: #CCC;
     font-size: 1.4em; }
-  ul.menubar a {
-    color: #AAA; }
-    ul.menubar a:visited {
+  a {
+    color: #AAA;
+    &:visited {
       color: #999; }
-    ul.menubar a:hover {
-      color: #DDD; }
+    &:hover {
+      color: #DDD; } } }
 
 /* Styles for author list */
+
 #create-author {
   font-size: 1.3em;
   margin-left: 20px; }
@@ -229,13 +240,13 @@ ul.menubar {
 
 .author-list {
   margin: 20px 0px 40px 40px;
-  padding: 0px 20px 0px 0px; }
-  .author-list #titles {
+  padding: 0px 20px 0px 0px;
+  #titles {
     background-color: #666;
     color: #AAA; }
-  .author-list td {
+  td {
     padding: 0px 5px 0px 5px;
-    height: 37px; }
+    height: 37px; } }
 
 .icons {
   background: #37414A;
@@ -248,28 +259,30 @@ ul.menubar {
   background: #AAA; }
 
 /* Styles for Photo */
+
 .photo {
   margin: 40px 0px 0px 60px;
   color: red;
   font-size: 1.3em;
-  font-family: fantasy; }
-  .photo p {
+  font-family: fantasy;
+  p {
     color: #AAA;
     font-size: 1.7em;
-    font-family: "Courier New"; }
+    font-family: "Courier New"; } }
 
 /* Styles for listing of article */
+
 .author-article-list {
-  margin: 20px 0px 0px 60px; }
-  .author-article-list p {
+  margin: 20px 0px 0px 60px;
+  p {
     color: #AAA;
     font-size: 2em;
     font-family: "Courier New"; }
-  .author-article-list ul {
+  ul {
     list-style-type: square;
     margin: 0px 0px 0px -20px; }
-  .author-article-list li {
+  li {
     font-size: 1.3em;
     color: #AAA;
     font-family: fantasy;
-    margin-top: 10px; }
+    margin-top: 10px; } }

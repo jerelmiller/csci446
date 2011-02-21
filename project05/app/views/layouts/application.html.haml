@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
+    %title
+      Articles: #{controller.action_name}
+    = stylesheet_link_tag 'scaffold', 'screen'
+  %body
+    = render :partial => 'layouts/title'
+    = render :partial => 'layouts/flash', :locals => {:flash => flash}
+    %ul.menubar
+      %li= link_to "Articles", articles_path, :title => "All The World's Articles"
+      %li= link_to "Authors", authors_path, :title => "All The World's Authors"
+    = yield

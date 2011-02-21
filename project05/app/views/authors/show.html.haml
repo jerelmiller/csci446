@@ -1,0 +1,19 @@
+- content_for :subtitle do
+  \...A piece of cherry pie just caught my eye
+.links-row
+  .delete-link
+    = link_to (image_tag('/images/delete_article.png', :border => 0, :title => "Delete This Author", :class => 'icon-reposition')) + "delete", @author, :confirm => 'Are you sure?', :method => :delete, :title => "Delete This Author"
+  .edit-link
+    = link_to (image_tag('/images/edit_article.png', :border => 0, :title => "Edit This Author", :class => 'icon-reposition')) + "edit", edit_author_path(@author), {:title => "Edit This Author"}
+  .articles-link
+    = link_to (image_tag('/images/back.png', :border => 0, :title => "List All Authors", :class => 'icon-reposition')) + "list all authors", authors_path, {:title => "List All Authors"}
+.article-title
+  %h1= h @author.name
+.photo
+  %p Photo:
+  = image_tag @author.photo.url
+.author-article-list
+  %p Articles:
+  %ul
+    - @authors_articles.each do |article|
+      %li= h article.title

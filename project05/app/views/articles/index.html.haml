@@ -1,0 +1,28 @@
+- content_for :subtitle do
+  \...Taking over the world...One ridicululous title at a time
+#article-add-table-title
+  #create-article
+    = link_to (image_tag('/images/add_article.png', :border => 0, :title => 'Add Article')) + "Create an Article", new_article_path, {:title => 'Create an Article'}
+  #table-title
+    %h2 All the World's Articles
+  %div
+    = will_paginate @articles
+    - if @articles.count > 0
+      .article-list
+        %table
+          %tr#titles
+            %td{:width => "160px"} Title
+            %td{:width => "120px"} Author
+            %td{:width => "450px"} Body
+            %td{:width => "200px"} Creation Date
+          - @articles.each do |article|
+            %tr{:class => cycle('list-line-odd', 'list-line-even')}
+              %td= h truncate(article.title, :length => 20)
+              %td= h article.author
+              %td= h truncate(article.body, :length => 65)
+              %td= article.created_at.strftime("%A, %b. %d %Y")
+              %td.icons= link_to (image_tag ('/images/view_article.png', :border => 0, :title => 'View Article', :onmouseover => "this.src='/images/view_article_big.png'", :onmouseout => "this.src='/images/view_article.png'")), article
+              %td.icons= link_to (image_tag('/images/edit_article.png', :border => 0, :title => 'Edit Article', :onmouseover => "this.src='/images/edit_article_big.png'", :onmouseout => "this.src='/images/edit_article.png'")), edit_article_path(article)
+              %td.icons= link_to (image_tag('/images/delete_article.png', :border => 0, :title => 'Delete Article', :onmouseover => "this.src='/images/delete_article_big.png'", :onmouseout => "this.src='/images/delete_article.png'")), article, :confirm => 'Are you sure?', :method => :delete
+    .article-count
+      = pluralize(@num_articles, 'article')

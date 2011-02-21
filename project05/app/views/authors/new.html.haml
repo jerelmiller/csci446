@@ -1,0 +1,11 @@
+- content_for :subtitle do
+  \...bringing a whole new meaning to 'clever'
+%div
+  = link_to (image_tag('/images/back.png', :border => 0, :title => "List All Authors", :class => 'icon-reposition')) + "list all authors", authors_path, {:title => "List All Authors"}
+.subtitle
+  %h2 Creating a New Author
+.article-form
+  - form_for(@author, :html => {:multipart => true}) do |f|
+    = render :partial => 'form', :locals => {:f => f}
+    %div
+      = f.submit 'Create!', :action => 'initialize_edits'
