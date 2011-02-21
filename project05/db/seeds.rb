@@ -92,7 +92,7 @@ article_attributes = [
                          :body => 'Being driven isnt enough, You must find your passion that directs you.'  
                         },
                         {:title => 'Cheese Is Great',
-                         :author => Author.new(:name => 'Ben Dover'),
+                         :author => Author.new(:name => 'Seymore Butts'),
                          :body => 'My how I love cheese. Doesnt it just go great on just about everything you put it on?
                          
                          I mean think about it. Tacos, Burritos, Nachos.... pretty much everything that ends in "os" will go great with cheese. Except Cheerios. Dont try that. That might be nasty.
