@@ -1,22 +1,30 @@
-<h1>Listing games</h1>
+<div>
+  <%= render :partial => 'header'%>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Rating</th>
-  </tr>
+  <div class="paginate">
+    <%= will_paginate @games %>
+  </div>
 
-<% @games.each do |game| %>
-  <tr>
-    <td><%=h game.title %></td>
-    <td><%=h game.rating %></td>
-    <td><%= link_to 'Show', game %></td>
-    <td><%= link_to 'Edit', edit_game_path(game) %></td>
-    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <% if @num_games > 0 %>
+    <table class="games-list">
+      <tr class="table-header">
+        <th width="100px">Title</th>
+        <th width="60px">Rating</th>
+		<th width="200px">Date Added</th>
+      </tr>
+  <% end %>
 
-<br />
+  <% @games.each do |game| %>
+    <tr>
+      <td><%=h link_to game.title, edit_game_path(game) %></td>
+      <td><%=h game.rating %></td>
+	  <td><%=h game.created_at.strftime("%b. %d, %Y") %>
+    </tr>
+  <% end %>
+  </table>
 
-<%= link_to 'New game', new_game_path %>
+  <br />
+  <div class="new-game">
+    <%= link_to 'New game', new_game_path %>
+  </div>
+</div>

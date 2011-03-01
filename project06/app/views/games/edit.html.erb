@@ -1,3 +1,5 @@
+<%= render :partial => 'header'%>
+
 <h1>Editing game</h1>
 
 <% form_for(@game) do |f| %>
@@ -16,5 +18,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @game %> |
 <%= link_to 'Back', games_path %>
