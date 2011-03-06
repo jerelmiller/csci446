@@ -1,8 +1,4 @@
-class Admin::RolesController < Admin::AdminController
-  
-  #before_filter :find_role, :only => {:show, :edit, :update, :destroy}
-  
-  #ROLES_PER_PAGE = 20
+class RolesController < ApplicationController
   # GET /roles
   # GET /roles.xml
   def index
