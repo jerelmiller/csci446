@@ -1,5 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
+
   map.resources :games
+  
+  map.root :controller => 'games'
+  map.logout 'logout', :controller => "user_sessions", :action => "destroy"
+  map.login 'login', :controller => "user_sessions", :action => "new"
+  
+  map.root :controller => 'games'
+  
+  map.namespace :admin do |admin|
+    admin.resources :roles
+    admin.resources :users
+    admin.root :controller => 'admin', :action => 'index'
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 
