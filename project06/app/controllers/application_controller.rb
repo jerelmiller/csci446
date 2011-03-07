@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password
-  helper_method :current_user
+  helper_method :current_user, :current_user_session
    
   private
    
@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   end
   
   def require_user
-    if current_user
+    if !current_user
       flash[:notice] = "You must be log in if you want to access that."
       redirect_to root_url
       return false

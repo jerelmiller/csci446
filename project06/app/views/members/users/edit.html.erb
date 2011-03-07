@@ -1,21 +1,22 @@
-<%= render :partial => '/admin/global/header' %>
+<%= render :partial => '/members/global/header' %>
 
-<h1>New user</h1>
+<div class="form-member">
+<h1>Editing <%= current_user.username %></h1>
 
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.text_field :username, :disabled => 'true' %>
   </p>
   <p>
-    <%= f.label :password_salt %><br />
-    <%= f.text_field :password_salt %>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
   </p>
   <p>
-    <%= f.label :role_id %><br />
-    <%= f.text_field :role_id %>
+    <%= f.label :password_confirmation %><br />
+    <%= f.text_field :password_confirmation %>
   </p>
   <p>
     <%= f.label :email %><br />
@@ -30,8 +31,7 @@
     <%= f.text_field :lastname %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Save Changes' %>
   </p>
 <% end %>
-
-<%= link_to 'Back', users_path %>
+</form>

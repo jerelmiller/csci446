@@ -8,6 +8,7 @@ authorization do
   
   role :member do
     has_permission_on :members_members, :to => :read
+    has_permission_on :members_games, :to => :read
   end
   
 end  

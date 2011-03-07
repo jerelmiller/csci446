@@ -17,9 +17,8 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.namespace :members do |members|
-    members.resources :roles
-    members.resources :users
     members.resources :games
+    members.resources :users
     members.root :controller => 'games'
   end
 

@@ -1,7 +1,6 @@
 class Admin::UsersController < Admin::AdminController
   
   USERS_PER_PAGE = 20
-  
   def index
     @users = User.paginate(:page => params[:page], :per_page => USERS_PER_PAGE)
   end

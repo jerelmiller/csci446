@@ -9,13 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110306102106) do
+ActiveRecord::Schema.define(:version => 20110307002738) do
 
   create_table "games", :force => true do |t|
     t.string   "name"
     t.string   "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "roles", :force => true do |t|
@@ -35,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20110306102106) do
     t.string   "lastname"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "role_id"
   end
 
 end

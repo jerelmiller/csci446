@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     
     if @user.save
       flash[:notice] = 'User was successfully created.'
-      redirect_to root_url
+      redirect_to members_root_url
     else
       render :action => "new"
     end
