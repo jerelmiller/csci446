@@ -8,9 +8,10 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     
     if @user.save
-      flash[:notice] = 'User was successfully created.'
+      flash[:notice] = 'Welcome, ' + @user.firstname + " " + @user.lastname
       redirect_to members_root_url
     else
+      flash[:notice] = "Sorry, we could not register you at this time."
       render :action => "new"
     end
   end

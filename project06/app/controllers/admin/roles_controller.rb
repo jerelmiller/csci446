@@ -1,20 +1,11 @@
 class Admin::RolesController < Admin::AdminController
 
   def index
-    @roles = Role.all
+    @roles = Role.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @roles }
-    end
-  end
-
-  def show
-    @role = Role.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @role }
     end
   end
 
@@ -31,7 +22,7 @@ class Admin::RolesController < Admin::AdminController
 
     respond_to do |format|
       if @role.save
-        format.html { redirect_to(@role, :notice => 'Role was successfully created.') }
+        format.html { redirect_to(admin_roles_path, :notice => 'Role was successfully created.') }
         format.xml  { render :xml => @role, :status => :created, :location => @role }
       else
         format.html { render :action => "new" }
@@ -45,7 +36,7 @@ class Admin::RolesController < Admin::AdminController
 
     respond_to do |format|
       if @role.update_attributes(params[:role])
-        format.html { redirect_to(@role, :notice => 'Role was successfully updated.') }
+        format.html { redirect_to(admin_roles_path, :notice => 'Role was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -54,13 +45,4 @@ class Admin::RolesController < Admin::AdminController
     end
   end
 
-  def destroy
-    @role = Role.find(params[:id])
-    @role.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(roles_url) }
-      format.xml  { head :ok }
-    end
-  end
 end

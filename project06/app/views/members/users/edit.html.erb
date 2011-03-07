@@ -3,7 +3,7 @@
 <div class="form-member">
 <h1>Editing <%= current_user.username %></h1>
 
-<% form_for(@user) do |f| %>
+<% form_for([:members, @user]) do |f| %>
   <%= f.error_messages %>
 
   <p>

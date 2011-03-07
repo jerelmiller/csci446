@@ -1,7 +1,8 @@
 <%= render :partial => '/global/header'%>
 
 <div class="form-member">
-
+  <h1>Register</h1>
+  <h3>Already a member? <%= link_to 'Log in', login_path %></h3>
   <% form_for(@user) do |f| %>
     <%= f.error_messages %>
 

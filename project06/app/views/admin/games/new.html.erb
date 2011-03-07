@@ -1,21 +1,37 @@
 <%= render :partial => '/admin/global/header' %>
 
-<h1>New game</h1>
 
-<% form_for(@game) do |f| %>
-  <%= f.error_messages %>
+<div class="form-admin">
+  <h1>New game</h1>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :rating %><br />
-    <%= f.text_field :rating %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+  <% form_for([:admin, @game]) do |f| %>
+    <%= f.error_messages %>
 
-<%= link_to 'Back', games_path %>
+    <div>
+      <%= f.label :name %>
+	  <%= f.text_field :name %>
+	</div><br/>
+	<div>
+      <%= f.label :rating %>
+	</div><br/>
+	<p>
+	  <%= f.radio_button :rating, "Excellent" %>
+	  <%= f.label :excellent %>
+	</p>
+	<p>
+	  <%= f.radio_button :rating, "Good" %>
+	  <%= f.label :good %>
+	</p>
+	<p>
+	  <%= f.radio_button :rating, "Average"  %>
+	  <%= f.label :average %>
+	</p>
+	<p>
+    <%= f.radio_button :rating, "Just Plain Sucks" %>
+    <%= f.label :just_plain_sucks %>
+	</p>
+    <p>
+      <%= f.submit 'Create' %>
+    </p>
+  <% end %>
+</div>

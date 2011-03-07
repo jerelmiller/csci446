@@ -1,30 +1,35 @@
-<div>
-  <%= render :partial => '/admin/global/header' %>
+<%= render :partial => '/admin/global/header' %>
 
-  <div class="paginate">
-    <%= will_paginate @games %>
+<% if notice %>
+  <div class="notice">
+	<%= notice %>
   </div>
+<% end %>
 
-  <% if @num_games > 0 %>
-    <table class="games-list">
-      <tr class="table-header">
-        <th width="100px">Name</th>
-        <th width="60px">Rating</th>
-		<th width="200px">Date Added</th>
-      </tr>
-  <% end %>
+<div class="paginate">
+  <%= will_paginate @games %>
+</div>
 
-  <% @games.each do |game| %>
-    <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
-      <td><%=h link_to game.name, edit_game_path(game) %></td>
-      <td><%=h game.rating %></td>
-	  <td><%=h game.created_at.strftime("%b. %d, %Y") %>
+
+<% if @num_games > 0 %>
+  <table class="list">
+    <tr class="table-header">
+      <th width="150px">Name</th>
+      <th width="150px">Rating</th>
+	  <th width="300px">Date Added</th>
     </tr>
-  <% end %>
-  </table>
+<% end %>
 
-  <br />
-  <div class="new-game">
-    <%= link_to 'New game', new_game_path %>
-  </div>
+<% @games.each do |game| %>
+  <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
+    <td><%=h link_to game.name, edit_admin_game_path(game) %></td>
+    <td><%=h game.rating %></td>
+    <td><%=h game.created_at.strftime("%b. %d, %Y") %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div class="new">
+  <%= link_to 'New game', new_admin_game_path %>
 </div>

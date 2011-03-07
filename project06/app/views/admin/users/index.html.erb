@@ -1,28 +1,24 @@
 <%= render :partial => '/admin/global/header' %>
 
-<h1>Listing users</h1>
 
-<table>
-  <tr>
-    <th>Username</th>
-    <th>Email</th>
-    <th>Firstname</th>
-    <th>Lastname</th>
+<div class="paginate">
+  <%= will_paginate @users %>
+</div>
+
+<table class="list">
+  <tr class="table-header">
+    <th width="200px">Name</th>
+    <th width="200px">Username</th>
+    <th width= "300px">Last Login</th>
+    <th width = "200px">Number of Games</th>
   </tr>
 
 <% @users.each do |user| %>
-  <tr>
+  <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
+    <td><%=h link_to user.firstname + " " + user.lastname, edit_admin_user_path(user) %></td>
     <td><%=h user.username %></td>
-    <td><%=h user.email %></td>
-    <td><%=h user.firstname %></td>
-    <td><%=h user.lastname %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td>'User's Last login'</td>
+	<td>'User's Number of Games'</td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New user', new_user_path %>

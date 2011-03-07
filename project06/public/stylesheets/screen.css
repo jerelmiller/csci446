@@ -77,20 +77,21 @@ td a:hover {
 	background: white;
 }
 
-.games-list {
+.list {
 	margin-left: auto;
 	margin-right: auto;
 	border: solid;
 	border-width: 10px;
 }
 
-.games-list th {
+.list th {
 	text-align: left;
 	font-size: 1.4em;
 }
 
-.games-list td {
+.list td {
 	font-size: 1.1em;
+	padding-left: 5px;
 }
 
 .table-header {
@@ -102,7 +103,7 @@ td a:hover {
 	margin: 100px 0px 20px 0px;
 }
 
-.new-game {
+.new {
 	text-align: center;
 }
 
@@ -125,6 +126,10 @@ td a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
+}
+
+.form-member div label {
+	margin-right: 50px;
 }
 
 .form-admin {

@@ -1,9 +1,9 @@
 <%= render :partial => '/admin/global/header' %>
 
 <div class="form-admin">
-<h1>Editing <%= current_user.username %></h1>
+<h1>Editing <%= @user.username %></h1>
 
-<% form_for(@user) do |f| %>
+<% form_for([:admin, @user]) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -30,7 +30,6 @@
     <%= f.label :lastname %><br />
     <%= f.text_field :lastname %>
   </p>
-  <p>
     <%= f.submit 'Save Changes' %>
   </p>
 <% end %>
