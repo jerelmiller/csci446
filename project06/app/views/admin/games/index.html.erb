@@ -15,7 +15,7 @@
   <% end %>
 
   <% @games.each do |game| %>
-    <tr>
+    <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
       <td><%=h link_to game.name, edit_game_path(game) %></td>
       <td><%=h game.rating %></td>
 	  <td><%=h game.created_at.strftime("%b. %d, %Y") %>

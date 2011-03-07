@@ -9,13 +9,13 @@
     <table class="games-list">
       <tr class="table-header">
         <th width="100px">Name</th>
-        <th width="60px">Rating</th>
+        <th width="100px">Rating</th>
 		<th width="200px">Date Added</th>
       </tr>
   <% end %>
 
   <% @games.each do |game| %>
-    <tr>
+    <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
       <td><%=h game.name %></td>
       <td><%=h game.rating %></td>
 	  <td><%=h game.created_at.strftime("%b. %d, %Y") %>
