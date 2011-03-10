@@ -1,13 +1,13 @@
 <div class="links-bar-logged-in">
-	<ul>
-	  <li>Logged in as <%= link_to current_user.username, edit_members_user_path(current_user) %>, member</li>
-	  <li><%= link_to 'My Games', members_games_path %></li>
-	  <li><%= link_to 'Logout', logout_path %></lis>
-	</ul>
-  </div>
+  <ul>
+	<li>Logged in as <%= link_to current_user.username, edit_members_user_path(current_user) %>, member</li>
+	<li><%= link_to 'My Games', members_games_path %></li>
+	<li><%= link_to 'Logout', logout_path %></li>
+  </ul>
+</div>
 
   <br />
 
   <div class="main-title">
-    <h1><%= link_to 'Gamez', members_root_url %></h1>
+    <h1><%= link_to 'Gamez', root_url %></h1>
   </div>

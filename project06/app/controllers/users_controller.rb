@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(params[:user])
-    
+    @user.role = Role.find_by_name("Member")
     if @user.save
       flash[:notice] = 'Welcome, ' + @user.firstname + " " + @user.lastname
       redirect_to members_root_url

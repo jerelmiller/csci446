@@ -2,11 +2,7 @@ class Admin::RolesController < Admin::AdminController
 
   def index
     @roles = Role.paginate(:page => params[:page])
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @roles }
-    end
+    @users = User
   end
 
   def new

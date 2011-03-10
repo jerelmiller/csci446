@@ -1,22 +1,18 @@
 <%= render :partial => '/admin/global/header' %>
 
-<h1>Editing role</h1>
 
-<% form_for([:admin, @role]) do |f| %>
-  <%= f.error_messages %>
+<h1 class="title">Editing role</h1>
+<div class="form">
 
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
+  <% form_for([:admin, @role]) do |f| %>
+    <%= f.error_messages %>
 
-<%= link_to 'Show', @role %> |
-<%= link_to 'Back', roles_path %>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.submit 'Update' %>
+    </p>
+  <% end %>
+</div>

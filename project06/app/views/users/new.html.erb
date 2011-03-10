@@ -1,11 +1,11 @@
 <%= render :partial => '/global/header'%>
 
-<div class="form-member">
+<div class="form">
   <h1>Register</h1>
-  <h3>Already a member? <%= link_to 'Log in', login_path %></h3>
+  <h3>Already a member? <%= link_to 'Log in.', login_path %></h3>
   <% form_for(@user) do |f| %>
     <%= f.error_messages %>
-
+  
     <p>
       <%= f.label :username %><br />
       <%= f.text_field :username %>
@@ -30,7 +30,13 @@
 	  <%= f.label :email %><br/>
 	  <%= f.text_field :email %>
 	</p>
-    <%= f.submit 'Register!' %>
-  </p>
-<% end %>
+	<p>
+	  <%= f.label :photo %><br/>
+	  <%= f.file_field :photo %>
+	</p>
+	<p>
+      <%= f.submit 'Register!' %>
+    </p>
+	
+  <% end %>
 </div>

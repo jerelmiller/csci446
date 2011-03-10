@@ -1,24 +1,24 @@
 <%= render :partial => '/admin/global/header' %>
 
+
+<h1 class="title">Roles</h1>
 <div class="paginate">
   <%= will_paginate @roles %>
 </div>
 
 <table class="list">
   <tr class="table-header">
-    <th>Title</th>
-    <th>Name</th>
+    <th width="200px">Name</th>
+    <th>Number of Users</th>
   </tr>
 
-<% @roles.each do |role| %>
-  <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
-    <td><%=h role.title %></td>
-    <td><%=h role.name %></td>
-    <td><%= link_to 'Show', role %></td>
-    <td><%= link_to 'Edit', edit_role_path(role) %></td>
-    <td><%= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <% @roles.each do |role| %>
+    <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
+      <td><%=h link_to role.name, edit_admin_role_path(role) %></td>
+      <td><%= @users.find_all_by_role_id(role.id).count %></td>
+    </tr>
+  <% end %>
 </table>
+
 
 <br />

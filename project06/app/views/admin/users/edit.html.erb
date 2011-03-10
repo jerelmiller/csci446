@@ -1,7 +1,8 @@
 <%= render :partial => '/admin/global/header' %>
 
-<div class="form-admin">
-<h1>Editing <%= @user.username %></h1>
+<h1 class="title">Editing <%= @user.username %></h1>
+
+<div class="form">
 
 <% form_for([:admin, @user]) do |f| %>
   <%= f.error_messages %>
@@ -30,6 +31,14 @@
     <%= f.label :lastname %><br />
     <%= f.text_field :lastname %>
   </p>
+  <p>
+	<%= f.label :photo %><br/>
+	<%= f.file_field :photo %>
+  </p>
+  <p>
+	<%= f.label :role %>
+	<%= f.select :role_id, @roles.collect { |r| [r.name, r.id] }, :include_blank => false %>
+  <p>
     <%= f.submit 'Save Changes' %>
   </p>
 <% end %>

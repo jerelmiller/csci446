@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :roles
     admin.resources :users
     admin.resources :games
+    admin.mygames 'mygames', :controller => "my_games", :action => "index"
     admin.root :controller => 'games'
   end
   

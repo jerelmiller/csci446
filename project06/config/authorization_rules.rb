@@ -1,24 +1,27 @@
 authorization do
   
   role :guest do
-    has_permision_on :games, :to => :read
+    has_permission_on :games, :to => :read
   end
   
   role :admin do
-    has_permission_on :admin_admin, :to => :manage
     has_permission_on :admin_roles, :to => :manage
-    has_permission_on :admin_users, :to => :manage
-    has_permission_on :admin_games, :to => :manage
+    has_permission_on :admin_users, :to => :view_edit
+    has_permission_on :admin_games, :to => [:view_edit, :add]
+    has_permission_on :admin_my_games, :to => :manage
   end
   
   role :member do
-    has_permission_on :members_games, :to => :manage
+    has_permission_on :members_games, :to => [:view_edit, :add]
+    has_permission_on :members_users, :to => :view_edit
   end
   
 end  
 
 privileges do
-  privilege :manage, :includes => [:new, :edit, :destroy, :read, :index, :update, :create]
+  privilege :view_edit, :includes => [:index, :change]
+  privilege :manage, :includes => [:view_edit, :add, :destroy]
+  privilege :add, :includes => [:new, :create]
   privilege :read, :includes => :index
-  privilege :update, :includes => [:edit, :create]
+  privilege :change, :includes => [:edit, :update]
 end

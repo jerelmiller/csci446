@@ -1,17 +1,12 @@
-class Admin::GamesController < Admin::AdminController
+class Admin::MyGamesController < Admin::AdminController
   
   GAMES_PER_PAGE = 10
   
   def index
-    @games = Game.paginate(:page => params[:page], :order => 'created_at DESC')
-    @num_games = Game.count
-  end
-  
-  def my_games
     @games = (Game.find_all_by_user_id(current_user.id)).paginate(:page => params[:page], :per_page => GAMES_PER_PAGE, :order => 'created_at DESC')
     @num_games = Game.count
   end
-
+  
   def new
     @game = Game.new
   end
@@ -41,4 +36,5 @@ class Admin::GamesController < Admin::AdminController
       render :action => "edit"
     end
   end
+    
 end

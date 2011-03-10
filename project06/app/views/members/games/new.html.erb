@@ -1,7 +1,7 @@
 <%= render :partial => '/members/global/header'%>
 
-<div class="form-member">
-  <h1>New game</h1>
+<h1 class="title">New game</h1>
+<div class="form">
 
   <% form_for([:members, @game]) do |f| %>
     <%= f.error_messages %>

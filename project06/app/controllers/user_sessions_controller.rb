@@ -1,6 +1,6 @@
 class UserSessionsController < ApplicationController
   
- # before_filter :require_user, :only => :destroy
+  before_filter :require_user, :only => :destroy
   
   def new
     @user_session = UserSession.new
@@ -8,15 +8,14 @@ class UserSessionsController < ApplicationController
 
   def create
     @user_session = UserSession.new(params[:user_session])
+    @user = User.find_by_username(@user_session.username)
     if @user_session.save
-      flash[:notice] = "Successfully logged in."
-    #  if User.find_by_username(@user_session.username).role.name == "admin"
-    #    redirect_to admin_root_url
-    #  else
-
+      flash[:notice] = "Welcome back, "+@user.firstname+" "+@user.lastname
+      if @user.role.name == "Admin"
+        redirect_to admin_root_url
+      else
         redirect_to members_root_url
-
-    #  end
+      end
     else
       render :action => 'new'
     end

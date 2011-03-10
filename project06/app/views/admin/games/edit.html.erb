@@ -1,8 +1,8 @@
 <%= render :partial => '/admin/global/header' %>
 
+<h1 class="title">Editing <%= @game.name %></h1>
 
-<div class="form-admin" >
-  <h1>Editing <%= @game.name %></h1>
+<div class="form" >
  
   <% form_for([:admin, @game]) do |f| %>
     <%= f.error_messages %>
@@ -30,6 +30,10 @@
       <%= f.radio_button :rating, "Just Plain Sucks" %>
       <%= f.label :just_plain_sucks %>
 	</p>
+	<p>
+	  <%= f.label :creator %>
+	  <%= f.select :user_id, @users.collect { |u| [u.firstname+" "+u.lastname, u.id] } %>
+    <p>
     <p>
       <%= f.submit 'Update' %>
     </p>

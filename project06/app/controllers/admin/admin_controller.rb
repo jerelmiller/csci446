@@ -2,7 +2,7 @@ class Admin::AdminController < ApplicationController
   
   before_filter :require_user
   
-  #filter_access_to :all
+  filter_access_to :all
   
   
   def index
@@ -11,7 +11,7 @@ class Admin::AdminController < ApplicationController
   
   protected
     def permission_denied
-      flash[:error] = "You do not have permission to access #{request.path}"
-      redirect_to login_url
+      flash[:notice] = "You do not have permission to access #{request.path}"
+      redirect_to root_url
     end
 end

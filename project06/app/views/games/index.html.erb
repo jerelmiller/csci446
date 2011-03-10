@@ -18,7 +18,16 @@
     <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
       <td><%=h game.name %></td>
       <td><%=h game.rating %></td>
-	  <td><%=h game.created_at.strftime("%b. %d, %Y") %>
+	  <td><%=h game.created_at.strftime("%b. %d, %Y")+" by " %>
+		  <% if current_user %>
+		    <% if game.user == current_user %>
+		      me
+		    <% else %>
+		      <%= User.find(game.user_id).firstname+" "+User.find(game.user_id).lastname %>
+		    <% end %>
+		  <% else %>
+		    <%= User.find(game.user_id).firstname+" "+User.find(game.user_id).lastname %>
+		  <% end %></td>
     </tr>
   <% end %>
   </table>

@@ -1,7 +1,8 @@
 <%= render :partial => '/members/global/header' %>
 
-<div class="form-member">
-<h1>Editing <%= current_user.username %></h1>
+<h1 class="title">Editing <%= current_user.username %></h1>
+
+<div class="form">
 
 <% form_for([:members, @user]) do |f| %>
   <%= f.error_messages %>
@@ -29,6 +30,10 @@
   <p>
     <%= f.label :lastname %><br />
     <%= f.text_field :lastname %>
+  </p>
+  <p>
+    <%= f.label :photo %><br/>
+    <%= f.file_field :photo %>
   </p>
   <p>
     <%= f.submit 'Save Changes' %>

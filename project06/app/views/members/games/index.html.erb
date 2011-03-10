@@ -7,6 +7,8 @@
   </div>
 <% end %>
 
+<h1 class="title">My Gamez</h1>
+
   <div class="paginate">
     <%= will_paginate @games %>
   </div>
@@ -24,7 +26,7 @@
     <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
       <td><%=h link_to game.name, edit_members_game_path(game) %></td>
       <td><%=h game.rating %></td>
-	  <td><%=h game.created_at.strftime("%b. %d, %Y") %>
+	  <td><%=h game.created_at.strftime("%b. %d, %Y")+" by me" %></td>
     </tr>
   <% end %>
   </table>
@@ -33,4 +35,7 @@
   <div class="new">
     <%= link_to 'New game', new_members_game_path %>
   </div>
+
+  <div class="games-count">
+	<h2>I've created <%= @num_games %> games</h2>
 </div>

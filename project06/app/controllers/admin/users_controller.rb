@@ -1,5 +1,7 @@
 class Admin::UsersController < Admin::AdminController
   
+  before_filter :load_roles, :only => :edit
+  
   USERS_PER_PAGE = 20
   def index
     @users = User.paginate(:page => params[:page], :order => 'lastname ASC')
@@ -11,6 +13,7 @@ class Admin::UsersController < Admin::AdminController
 
   def update
     @user = User.find(params[:id])
+    @user.role = Role.find_by_name(:admin)
 
     if @user.update_attributes(params[:user])
         flash[:notice] = 'User was successfully updated.'
@@ -20,4 +23,9 @@ class Admin::UsersController < Admin::AdminController
       render :action => "edit"
     end
   end
+  
+  private
+    def load_roles
+      @roles = Role.all
+    end
 end
