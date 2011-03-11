@@ -4,19 +4,19 @@
       <ul>
 	    <li>Logged in as <%= link_to current_user.username, edit_admin_user_path(current_user), :title => 'Edit my profile' %>, admin</li>
 	    <li><%= link_to 'Admin', admin_root_url, :title => 'Admin home' %></li>
-	    <li><%= link_to 'Logout', logout_path, :title => 'Logout' %></li>
+	    <li><%= link_to 'Logout', logout_path %></li>
       </ul>
     <% else %>
       <ul>
 	    <li>Logged in as <%= link_to current_user.username, edit_members_user_path(current_user), :title => 'Edit my profile' %>, member</li>
 	    <li><%= link_to 'My Games', members_games_path, :title => 'Show my games' %></li>
-	    <li><%= link_to 'Logout', logout_path, :title => 'Logout' %></li>
+	    <li><%= link_to 'Logout', logout_path %></li>
       </ul>
     <% end %>
   <% else %>
 	<ul>
-	  <li><%= link_to 'log in', login_path, :title => 'Log in' %></li>
-	  <li><%= link_to 'register', new_user_path, :title => 'Register' %></li>
+	  <li><%= link_to 'log in', login_path %></li>
+	  <li><%= link_to 'register', new_user_path %></li>
 	</ul>
   <% end %>
 </div>
@@ -24,7 +24,7 @@
 <br />
 
 <div class="main-title">
-  <h1><%= link_to 'Gamez', root_url, :title => 'Go to home page' %></h1>
+  <h1><%= link_to 'Gamez', root_url %></h1>
 </div>
 
 <%= render :partial => '/global/flash', :locals => {:flash => flash}  %>

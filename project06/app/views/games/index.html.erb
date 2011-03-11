@@ -12,6 +12,8 @@
         <th width="150px">Rating</th>
 		<th width="300px">Date Added</th>
       </tr>
+  <% else %>
+	<h1 class="title">No Games have been created</h1>
   <% end %>
 
   <% @games.each do |game| %>

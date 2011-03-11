@@ -3,14 +3,14 @@
     <li>Logged in as <%= link_to current_user.username, edit_admin_user_path(current_user), :title => 'Edit my profile' %>, admin.</li>
 	<li><%= link_to 'Admin', admin_root_url, :title => 'Admin home' %>
 	<li><%= link_to 'My Games', admin_mygames_url, :title => 'Show my games' %></li>
-	<li><%= link_to 'Logout', logout_path, :title => 'Logout' %>
+	<li><%= link_to 'Logout', logout_path %>
   </ul>
 </div>
 
 <br />
 
 <div class="main-title">
-  <h1><%= link_to 'Gamez', root_url, :title => 'Go to home page' %></h1>
+  <h1><%= link_to 'Gamez', root_url %></h1>
   <h5>Admin</h5>
 </div>
   
