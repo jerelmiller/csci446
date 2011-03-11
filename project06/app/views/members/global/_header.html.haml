@@ -1,0 +1,10 @@
+.links-bar-logged-in
+  %ul
+    %li
+      Logged in as #{link_to current_user.username, edit_members_user_path(current_user), :title => 'Edit my profile'}, member
+    %li= link_to 'My Games', members_games_path, :title => 'Show my games'
+    %li= link_to 'Logout', logout_path
+%br/
+.main-title
+  %h1= link_to 'Gamez', root_url
+= render :partial => '/global/flash', :locals => {:flash => flash}

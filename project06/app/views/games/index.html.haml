@@ -1,0 +1,25 @@
+%div
+  = render :partial => '/global/header'
+  .paginate
+    = will_paginate @games
+  - if @num_games > 0
+    %table.list
+      %tr.table-header
+        %th{:width => "150px"} Name
+        %th{:width => "150px"} Rating
+        %th{:width => "300px"} Date Added
+  - else
+    %h1.title No Games have been created
+  - @games.each do |game|
+    <tr class=#{cycle('list-line-odd', 'list-line-even')}>
+    %td= h game.name
+    %td= h game.rating
+    %td
+      = h game.created_at.strftime("%b. %d, %Y")+" by "
+      - if current_user
+        - if game.user == current_user
+          me
+        - else
+          = User.find(game.user_id).firstname+" "+User.find(game.user_id).lastname
+      - else
+        = User.find(game.user_id).firstname+" "+User.find(game.user_id).lastname

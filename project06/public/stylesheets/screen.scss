@@ -1,0 +1,198 @@
+/* Styles for main page */
+
+body {
+	background: #5C735D;
+}
+
+label, h1 {
+	color: #ECF2D5;
+}
+
+a {
+	color: #ECF2D5;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ECF2D5;
+}
+
+a:hover {
+	color: #4B5943;
+	background: none;
+}
+
+td {
+	color: #333;
+}
+
+td a {
+	color: #333;
+}
+
+td a:visited {
+	color: #333;
+}
+
+td a:hover {
+	color: #ECF2D5;
+}
+
+.main-title {
+	text-align: center;
+	font-size: 4em;
+	background: #2E403C;
+	height: 80px;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.main-title h5 {
+  position: relative;
+  top: -20px;
+  color: #788;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 30px;
+  background: black;
+}
+
+.links-bar {
+	float: right;
+}
+
+
+.links-bar-logged-in {
+	float:right;
+}
+
+.links-bar-logged-in li {
+	list-style-type:none;
+	display: inline;
+	padding-right: 30px;
+}
+
+.links-bar li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 50px;
+}
+
+.list-line-odd {
+	background: #CCC;
+}
+
+.list-line-even {
+	background: white;
+}
+
+.list {
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+	border-width: 10px;
+}
+
+.list th {
+	text-align: left;
+	font-size: 1.4em;
+}
+
+.list td {
+	font-size: 1.1em;
+	padding-left: 5px;
+}
+
+.table-header {
+	background: #AAA;
+}
+
+.paginate {
+	text-align: center;
+	margin: 60px 0px 20px 0px;
+}
+
+.new {
+	text-align: center;
+}
+
+.admin-links-bar {
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	border: solid;
+	margin-top: 30px;
+}
+
+.admin-links-bar li {
+	list-style-type: none;
+	display: inline;
+	font-size: 2em;	
+	padding-right: 120px;	
+}
+
+.form {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+.title {
+	position: relative;
+	top: 30px;
+	text-align: center;
+	font-size: 3em;	
+}
+
+.games-count {
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flash {
+	width: 600px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flash p {
+	font-size: 1.4em;
+	text-align: center;	
+}
+
+.flash.success {
+    background: #F0FFF0;
+	color: #060;
+}
+
+.flash.error {
+	background: #FFF0F0 ;
+	color: #900;
+}
+
+.delete-link {
+	text-align: center;
+	position: relative;
+	top: 30px;
+}
+
+.delete-link img {
+	background: none;
+	border: none;
+}
+
+.delete-link a:hover {
+	font-size: 1.2em;
+}
+
+.icon-reposition {
+  position: relative;
+  top: 8px;
+  margin-right: 5px; 
+}

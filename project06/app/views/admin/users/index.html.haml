@@ -1,0 +1,14 @@
+= render :partial => '/admin/global/header'
+%h1.title Users
+.paginate
+  = will_paginate @users
+%table.list
+  %tr.table-header
+    %th{:width => "200px"} Name
+    %th{:width => "150px"} Username
+    %th{:width => "200px"} Number of Games
+  - @users.each do |user|
+    <tr class=#{cycle('list-line-odd', 'list-line-even')}>
+    %td= h link_to user.firstname + " " + user.lastname, edit_admin_user_path(user), :title => 'Edit '+user.firstname + " "+user.lastname
+    %td= h user.username
+    %td= @games.find_all_by_user_id(user.id).count

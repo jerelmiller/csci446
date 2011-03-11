@@ -1,0 +1,22 @@
+.links-bar
+  - if current_user
+    - if current_user.role.name == "Admin"
+      %ul
+        %li
+          Logged in as #{link_to current_user.username, edit_admin_user_path(current_user), :title => 'Edit my profile'}, admin
+        %li= link_to 'Admin', admin_root_url, :title => 'Admin home'
+        %li= link_to 'Logout', logout_path
+    - else
+      %ul
+        %li
+          Logged in as #{link_to current_user.username, edit_members_user_path(current_user), :title => 'Edit my profile'}, member
+        %li= link_to 'My Games', members_games_path, :title => 'Show my games'
+        %li= link_to 'Logout', logout_path
+  - else
+    %ul
+      %li= link_to 'log in', login_path
+      %li= link_to 'register', new_user_path
+%br/
+.main-title
+  %h1= link_to 'Gamez', root_url
+= render :partial => '/global/flash', :locals => {:flash => flash}

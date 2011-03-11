@@ -15,6 +15,7 @@ Rails::Initializer.run do |config|
   # config.autoload_paths += %W( #{RAILS_ROOT}/extras )
 
   config.gem 'authlogic'
+  config.gem 'haml'
   config.gem 'declarative_authorization'
   config.gem 'will_paginate'
   config.gem 'paperclip'

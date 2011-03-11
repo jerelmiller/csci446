@@ -1,0 +1,39 @@
+= render :partial => '/global/header'
+.form
+  %h1 Register
+  %h3
+    Already a member? #{link_to 'Log in.', login_path}
+  - form_for(@user) do |f|
+    = f.error_messages
+    %p
+      = f.label :username
+      %br/
+      = f.text_field :username
+    %p
+      = f.label :password
+      %br/
+      = f.password_field :password
+    %p
+      = f.label :password_confirmation
+      %br/
+      = f.password_field :password_confirmation
+    %p
+      = f.label :first_name
+      %br/
+      = f.text_field :firstname
+    %p
+      = f.label :last_name
+      %br/
+      = f.text_field :lastname
+    %p
+      = f.label :email
+      %br/
+      = f.text_field :email
+    %p
+      = f.label :photo
+      %br/
+      = f.file_field :photo
+    %p
+      = recaptcha_tags
+    %p
+      = f.submit 'Register!'

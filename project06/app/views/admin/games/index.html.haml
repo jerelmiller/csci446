@@ -1,0 +1,25 @@
+= render :partial => '/admin/global/header'
+%h1.title
+  = @num_games
+  Total Games
+.paginate
+  = will_paginate @games
+- if @num_games > 0
+  %table.list
+    %tr.table-header
+      %th{:width => "150px"} Name
+      %th{:width => "150px"} Rating
+      %th{:width => "300px"} Date Added
+- @games.each do |game|
+  <tr class=#{cycle('list-line-odd', 'list-line-even')}>
+  %td= h link_to game.name, edit_admin_game_path(game), :title => 'Edit '+game.name
+  %td= h game.rating
+  %td
+    = h game.created_at.strftime("%b. %d, %Y")+" by "
+    - if game.user == current_user
+      me
+    - else
+      = @user.find(game.user_id).firstname+" "+@user.find(game.user_id).lastname
+%br/
+.new
+  = link_to 'New game', new_admin_game_path, :title => 'Create a new game'

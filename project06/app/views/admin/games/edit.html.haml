@@ -1,0 +1,31 @@
+= render :partial => '/admin/global/header'
+%h1.title
+  Editing #{@game.name}
+.form
+  - form_for([:admin, @game]) do |f|
+    = f.error_messages
+    %div
+      = f.label :name
+      = f.text_field :name
+    %br/
+    %div
+      = f.label :rating
+    %br/
+    %p
+      = f.radio_button :rating, "Excellent"
+      = f.label :excellent
+    %p
+      = f.radio_button :rating, "Good"
+      = f.label :good
+    %p
+      = f.radio_button :rating, "Average"
+      = f.label :average
+    %p
+      = f.radio_button :rating, "Just Plain Sucks"
+      = f.label :just_plain_sucks
+    %p
+      = f.label :creator
+      = f.select :user_id, @users.collect { |u| [u.firstname+" "+u.lastname, u.id] }, :selected => current_user.id
+    %p
+      %p
+        = f.submit 'Update'
