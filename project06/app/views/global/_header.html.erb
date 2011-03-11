@@ -28,8 +28,4 @@
   <h1><%= link_to 'Gamez', root_url %></h1>
 </div>
 
-<% if notice %>
-  <div class="notice">
-    <%= notice %>
-  </div>
-<% end %>
+<%= render :partial => '/global/flash', :locals => {:flash => flash}  %>

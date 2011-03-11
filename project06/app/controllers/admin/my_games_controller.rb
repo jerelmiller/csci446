@@ -2,14 +2,15 @@ class Admin::MyGamesController < Admin::AdminController
   
   GAMES_PER_PAGE = 10
   
-  def index
+  def index   
     @games = (Game.find_all_by_user_id(current_user.id)).paginate(:page => params[:page], :per_page => GAMES_PER_PAGE, :order => 'created_at DESC')
-    @num_games = Game.find_all_by_user_id(current_user.id).count
+    @num_games = (Game.find_all_by_user_id(current_user.id)).count
+    @games_all = (Game.find_all_by_user_id(current_user.id))
     
     if(@num_games > 0)
       @unrated_games = 0
     
-      for game in @games
+      for game in @games_all
         if(game.rating == nil)
           @unrated_games += 1
         end
@@ -19,36 +20,6 @@ class Admin::MyGamesController < Admin::AdminController
       @percent = (@rated_games.to_f/@num_games.to_f) * 100
     end
     
-  end
-  
-  def new
-    @game = Game.new
-  end
-
-  def edit
-    @game = Game.find(params[:id])
-  end
-
-  def create
-    @game = Game.new(params[:game])
-    
-    if @game.save
-      flash[:notice] = 'Successfully added '+@game.name
-      redirect_to admin_root_url
-    else
-      render :action => "new"
-    end
-  end
-
-  def update
-    @game = Game.find(params[:id])
-
-    if @game.update_attributes(params[:game])
-      flash[:notice] = 'Successfully updated '+@game.name
-      redirect_to admin_games_path
-    else
-      render :action => "edit"
-    end
   end
     
 end

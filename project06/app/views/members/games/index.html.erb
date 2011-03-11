@@ -1,45 +1,38 @@
-<div>
-  <%= render :partial => '/members/global/header'%>
-
-<% if notice %>
-  <div class="notice">
-    <%= notice %>
-  </div>
-<% end %>
+<%= render :partial => '/members/global/header'%>
 
 <h1 class="title">My Gamez</h1>
 
-  <div class="paginate">
-    <%= will_paginate @games %>
-  </div>
+<div class="paginate">
+  <%= will_paginate @games %>
+</div>
 
-  <% if @num_games > 0 %>
-    <table class="list">
-      <tr class="table-header">
-        <th width="150px">Name</th>
-        <th width="150px">Rating</th>
-		<th width="300px">Date Added</th>
-      </tr>
-  <% end %>
-
-  <% @games.each do |game| %>
-    <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
-      <td><%=h link_to game.name, edit_members_game_path(game) %></td>
-      <td><%=h game.rating %></td>
-	  <td><%=h game.created_at.strftime("%b. %d, %Y")+" by me" %></td>
+<% if @num_games > 0 %>
+  <table class="list">
+    <tr class="table-header">
+      <th width="150px">Name</th>
+      <th width="150px">Rating</th>
+	  <th width="300px">Date Added</th>
     </tr>
-  <% end %>
-  </table>
+<% end %>
 
-  <br />
-  <div class="new">
-    <%= link_to 'New game', new_members_game_path %>
-  </div>
+<% @games.each do |game| %>
+  <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
+    <td><%=h link_to game.name, edit_members_game_path(game) %></td>
+    <td><%=h game.rating %></td>
+	<td><%=h game.created_at.strftime("%b. %d, %Y")+" by me" %></td>
+  </tr>
+<% end %>
+</table>
 
-  <div class="games-count">
-	<h2>I've created <%= pluralize(@num_games, "game") %>.
-	    <% if @num_games > 0 %>
-		  <%= sprintf("%.1i", @percent) %>% are rated
-		<% end %>
-	</h2>
-  </div>
+<br />
+<div class="new">
+  <%= link_to 'New game', new_members_game_path %>
+</div>
+
+<div class="games-count">
+  <h2>I've created <%= pluralize(@num_games, "game") %>.
+    <% if @num_games > 0 %>
+	  <%= sprintf("%.1i", @percent) %>% are rated
+    <% end %>
+  </h2>
+</div>

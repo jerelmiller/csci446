@@ -3,6 +3,7 @@ class Admin::UsersController < Admin::AdminController
   before_filter :load_roles, :only => [:edit, :update]
   
   USERS_PER_PAGE = 20
+  
   def index
     @users = User.paginate(:page => params[:page], :order => 'lastname ASC')
     @games = Game
@@ -17,10 +18,10 @@ class Admin::UsersController < Admin::AdminController
     @user.role = Role.find_by_name(:admin)
 
     if @user.update_attributes(params[:user])
-        flash[:notice] = 'User was successfully updated.'
+        flash[:success] = 'Successfully updated profile.'
         redirect_to admin_users_path
     else
-      flash[:notice] = 'User could not be updated at this time.'
+      flash[:error] = 'Could not save profile.'
       render :action => "edit"
     end
   end

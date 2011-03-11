@@ -140,18 +140,6 @@ td a:hover {
 	margin-top: 100px;
 }
 
-.notice {
-	width: 600px;
-	height: 30px;
-	font-size: 1.4em;
-	text-align: center;
-	background: #F0FFF0;
-	color: #060;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .title {
 	position: relative;
 	top: 30px;
@@ -163,4 +151,27 @@ td a:hover {
 	width: 640px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.flash {
+	width: 600px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flash p {
+	font-size: 1.4em;
+	text-align: center;	
+}
+
+.flash.success {
+    background: #F0FFF0;
+	color: #060;
+}
+
+.flash.error {
+	background: #FFF0F0 ;
+	color: #900;
 }

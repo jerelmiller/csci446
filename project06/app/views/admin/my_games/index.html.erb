@@ -30,7 +30,7 @@
 	      <% if game.user == current_user %>
 		    me
 		  <% else %>
-		    <%= User.find(game.user_id).firstname+" "+User.find(game.user_id).lastname %>
+		    <%= @user.find(game.user_id).firstname+" "+@user.find(game.user_id).lastname %>
 		  <% end %></td>
   </tr>
 <% end %>

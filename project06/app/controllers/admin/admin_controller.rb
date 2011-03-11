@@ -11,7 +11,7 @@ class Admin::AdminController < ApplicationController
   
   protected
     def permission_denied
-      flash[:notice] = "You do not have permission to access #{request.path}"
+      flash[:error] = "You do not have permission to access #{request.path}"
       if current_user.role.name == "Member"
         redirect_to members_root_url
       else

@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   
   def require_user
     if !current_user
-      flash[:notice] = "You must be log in if you want to access that."
+      flash[:error] = "You must be log in if you want to access that."
       redirect_to root_url
       return false
     end

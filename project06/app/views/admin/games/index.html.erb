@@ -1,11 +1,5 @@
 <%= render :partial => '/admin/global/header' %>
 
-<% if notice %>
-  <div class="notice">
-	<%= notice %>
-  </div>
-<% end %>
-
 <h1 class="title"><%= @num_games %> Total Games</h1>
 
 <div class="paginate">
@@ -30,7 +24,7 @@
 	      <% if game.user == current_user %>
 		    me
 		  <% else %>
-		    <%= User.find(game.user_id).firstname+" "+User.find(game.user_id).lastname %>
+		    <%= @user.find(game.user_id).firstname+" "+@user.find(game.user_id).lastname %>
 		  <% end %></td>
   </tr>
 <% end %>

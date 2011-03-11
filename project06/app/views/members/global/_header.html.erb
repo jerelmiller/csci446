@@ -6,8 +6,10 @@
   </ul>
 </div>
 
-  <br />
+<br />
 
-  <div class="main-title">
-    <h1><%= link_to 'Gamez', root_url %></h1>
-  </div>
+<div class="main-title">
+  <h1><%= link_to 'Gamez', root_url %></h1>
+</div>
+
+<%= render :partial => '/global/flash', :locals => {:flash => flash}  %>
