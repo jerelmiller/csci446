@@ -19,6 +19,9 @@ Rails::Initializer.run do |config|
   config.gem 'will_paginate'
   config.gem 'paperclip'
   config.gem "recaptcha", :lib => "recaptcha/rails"
+  
+  ENV['RECAPTCHA_PUBLIC_KEY']  = '6LdfXMISAAAAABsXlG8lNbqRU9YxHh8F9gs3UOm0'
+  ENV['RECAPTCHA_PRIVATE_KEY'] = 'LdfXMISAAAAAKgsT_EZZdEtt1DeroNRRfMCcQb8'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

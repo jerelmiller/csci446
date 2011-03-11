@@ -37,5 +37,9 @@
   </div>
 
   <div class="games-count">
-	<h2>I've created <%= @num_games %> games</h2>
-</div>
+	<h2>I've created <%= pluralize(@num_games, "game") %>.
+	    <% if @num_games > 0 %>
+		  <%= sprintf("%.1i", @percent) %>% are rated
+		<% end %>
+	</h2>
+  </div>

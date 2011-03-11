@@ -4,7 +4,21 @@ class Admin::MyGamesController < Admin::AdminController
   
   def index
     @games = (Game.find_all_by_user_id(current_user.id)).paginate(:page => params[:page], :per_page => GAMES_PER_PAGE, :order => 'created_at DESC')
-    @num_games = Game.count
+    @num_games = Game.find_all_by_user_id(current_user.id).count
+    
+    if(@num_games > 0)
+      @unrated_games = 0
+    
+      for game in @games
+        if(game.rating == nil)
+          @unrated_games += 1
+        end
+      end
+    
+      @rated_games = @num_games - @unrated_games
+      @percent = (@rated_games.to_f/@num_games.to_f) * 100
+    end
+    
   end
   
   def new

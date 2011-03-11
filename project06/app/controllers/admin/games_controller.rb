@@ -1,5 +1,7 @@
 class Admin::GamesController < Admin::AdminController
   
+  before_filter :load_users, :only => :edit
+  
   GAMES_PER_PAGE = 10
   
   def index
@@ -41,4 +43,9 @@ class Admin::GamesController < Admin::AdminController
       render :action => "edit"
     end
   end
+  
+  private
+    def load_users
+      @users = User.all
+    end
 end

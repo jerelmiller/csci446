@@ -40,3 +40,11 @@
 <div class="new">
   <%= link_to 'New game', new_admin_game_path %>
 </div>
+
+<div class="games-count">
+  <h2>I've created <%= pluralize(@num_games, "game") %>.
+	  <% if @num_games > 0 %>
+		<%= sprintf("%.1i", @percent) %>% are rated
+	  <% end %>
+  </h2>
+</div>

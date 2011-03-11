@@ -1,10 +1,11 @@
 class Admin::UsersController < Admin::AdminController
   
-  before_filter :load_roles, :only => :edit
+  before_filter :load_roles, :only => [:edit, :update]
   
   USERS_PER_PAGE = 20
   def index
     @users = User.paginate(:page => params[:page], :order => 'lastname ASC')
+    @games = Game
   end
 
   def edit
