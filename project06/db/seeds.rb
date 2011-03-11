@@ -1,10 +1,6 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
-
-#role_attributes = [ { :name => 'Admin' },
-                  #  { :name => 'Member' }
-                  #]
                   
 user_attributes = [ { :firstname => 'Jack',
                       :lastname => 'Admin',
@@ -23,8 +19,6 @@ user_attributes = [ { :firstname => 'Jack',
                       :email => 'dianemember@gamez.com'
                     }
                   ]
-                  
-#
 
 user_attributes.each do |user|
   User.create!(user)
