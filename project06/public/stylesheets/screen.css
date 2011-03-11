@@ -175,3 +175,24 @@ td a:hover {
 	background: #FFF0F0 ;
 	color: #900;
 }
+
+.delete-link {
+	text-align: center;
+	position: relative;
+	top: 30px;
+}
+
+.delete-link img {
+	background: none;
+	border: none;
+}
+
+.delete-link a:hover {
+	font-size: 1.2em;
+}
+
+.icon-reposition {
+  position: relative;
+  top: 8px;
+  margin-right: 5px; 
+}

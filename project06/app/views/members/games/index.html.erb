@@ -17,7 +17,7 @@
 
 <% @games.each do |game| %>
   <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
-    <td><%=h link_to game.name, edit_members_game_path(game) %></td>
+    <td><%=h link_to game.name, edit_members_game_path(game), :title => 'Edit '+game.name %></td>
     <td><%=h game.rating %></td>
 	<td><%=h game.created_at.strftime("%b. %d, %Y")+" by me" %></td>
   </tr>
@@ -26,7 +26,7 @@
 
 <br />
 <div class="new">
-  <%= link_to 'New game', new_members_game_path %>
+  <%= link_to 'New game', new_members_game_path, :title => 'Create a new game' %>
 </div>
 
 <div class="games-count">

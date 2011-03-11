@@ -16,28 +16,36 @@ class Admin::RolesController < Admin::AdminController
   def create
     @role = Role.new(params[:role])
 
-    respond_to do |format|
-      if @role.save
-        format.html { redirect_to(admin_roles_path, :notice => 'Role was successfully created.') }
-        format.xml  { render :xml => @role, :status => :created, :location => @role }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @role.errors, :status => :unprocessable_entity }
-      end
+    if @role.save
+       flash[:success] = 'Role was successfully created.'
+       redirect_to admin_roles_path
+    else
+      flash[:error] = 'Role could not be created.'
+      render :action => "new" 
     end
   end
 
   def update
     @role = Role.find(params[:id])
 
-    respond_to do |format|
-      if @role.update_attributes(params[:role])
-        format.html { redirect_to(admin_roles_path, :notice => 'Role was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @role.errors, :status => :unprocessable_entity }
-      end
+    if @role.update_attributes(params[:role])
+        flash[:success] = 'Role was successfully updated.'
+        redirect_to admin_roles_path
+
+    else
+      flash[:error] = 'Role could not be updated.'
+      render :action => "edit" 
+    end
+  end
+  
+  def destroy
+    @role = Role.find(params[:id])
+    if @role.destroy
+      flash[:success] = "Successfully deleted role."
+      redirect_to admin_roles_path
+    else
+      flash[:error] = "There was an error deleting the role."
+      redirect_to admin_roles_path
     end
   end
 

@@ -10,15 +10,13 @@
   <tr class="table-header">
     <th width="200px">Name</th>
     <th width="150px">Username</th>
-    <th width= "200px">Last Login</th>
     <th width = "200px">Number of Games</th>
   </tr>
 
 <% @users.each do |user| %>
   <tr class=<%= cycle('list-line-odd', 'list-line-even') %>>
-    <td><%=h link_to user.firstname + " " + user.lastname, edit_admin_user_path(user) %></td>
+    <td><%=h link_to user.firstname + " " + user.lastname, edit_admin_user_path(user), :title => 'Edit '+user.firstname + " "+user.lastname %></td>
     <td><%=h user.username %></td>
-	<td>'User's Last login'</td>
 	<td><%= @games.find_all_by_user_id(user.id).count %></td>
   </tr>
 <% end %>
