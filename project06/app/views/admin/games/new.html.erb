@@ -33,7 +33,7 @@
 	</p>
 	<p>
 	  <%= f.label :creator %>
-	  <%= f.select :user_id, @users.collect { |u| [u.firstname+" "+u.lastname, u.id] } %>
+	  <%= f.select :user_id, @users.collect { |u| [u.firstname+" "+u.lastname, u.id] }, :selected => current_user.id %>
     <p>
       <%= f.submit 'Create' %>
     </p>

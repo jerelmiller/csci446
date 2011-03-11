@@ -57010,3 +57010,1496 @@ Rendered admin/global/_header (1.5ms)
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
 Completed in 131ms (View: 99, DB: 2) | 200 OK [http://localhost/admin/games]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-10 22:58:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 90ms (View: 23, DB: 2) | 200 OK [http://localhost/admin/games]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-10 22:59:00) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-10 22:59:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 37ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-10 22:59:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.1ms)
+Completed in 35ms (View: 24, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 22:59:26) [POST]
+  Parameters: {"recaptcha_response_field"=>"1904 polem", "recaptcha_challenge_field"=>"03AHJ_VuvcFUhjR_p3KptbsjK7_0OnlmbEVF1kPHHQLqAe2DBQYjgNhZJy7pqousUrpsLyWPsDaCeHTNpezn5KKKsqQW6SR1k6tkQARLrsvilYfnM8k5ZVeVXGuP9fF63rm80a3TG--0rAEXAUgPjeIWhpEksccRlWGg", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"badapple", "lastname"=>"apple", "firstname"=>"bad", "password"=>"[FILTERED]", "email"=>"badapple@mines.edu"}}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'badapple@mines.edu') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'badapple') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'd64da1760eec91b6e1bb7603b6c83cfd9c7817b1587f14c873580a442ce92aea2f411cd7ba7335849d20967741c2e9115a507d167578f524d9b456b323f54ac9') LIMIT 1[0m
+  [4;35;1mUser Create (22.1ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "photo_file_size", "updated_at", "photo_file_name", "username", "role_id", "photo_content_type", "lastname", "password_salt", "photo_updated_at", "persistence_token", "firstname", "email") VALUES('d007ea8e2e79318a1c2162627f0baae45043fcce82355e67280d5a8c218390e2b1b232a6731e391266db66b9526aeaf0e4bec07bd61e59a1e847c0bc549071e0', '2011-03-11 05:59:26', NULL, '2011-03-11 05:59:26', NULL, 'badapple', 2, NULL, 'apple', 'bFtVeQ8c1B1kzqseV1FW', NULL, 'd64da1760eec91b6e1bb7603b6c83cfd9c7817b1587f14c873580a442ce92aea2f411cd7ba7335849d20967741c2e9115a507d167578f524d9b456b323f54ac9', 'bad', 'badapple@mines.edu')[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/members
+Completed in 58ms (DB: 23) | 302 Found [http://localhost/users]
+
+
+Processing Members::GamesController#index (for 127.0.0.1 at 2011-03-10 22:59:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"members/games"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'd64da1760eec91b6e1bb7603b6c83cfd9c7817b1587f14c873580a442ce92aea2f411cd7ba7335849d20967741c2e9115a507d167578f524d9b456b323f54ac9') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 16) [0m
+Rendering template within layouts/application
+Rendering members/games/index
+Rendered global/_flash (0.1ms)
+Rendered members/global/_header (1.1ms)
+Completed in 33ms (View: 3, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing Members::GamesController#index (for 127.0.0.1 at 2011-03-10 23:00:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"members/games"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'd64da1760eec91b6e1bb7603b6c83cfd9c7817b1587f14c873580a442ce92aea2f411cd7ba7335849d20967741c2e9115a507d167578f524d9b456b323f54ac9') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 16) [0m
+Rendering template within layouts/application
+Rendering members/games/index
+Rendered global/_flash (0.1ms)
+Rendered members/global/_header (1.2ms)
+Completed in 115ms (View: 3, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-10 23:00:18) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'd64da1760eec91b6e1bb7603b6c83cfd9c7817b1587f14c873580a442ce92aea2f411cd7ba7335849d20967741c2e9115a507d167578f524d9b456b323f54ac9') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'd64da1760eec91b6e1bb7603b6c83cfd9c7817b1587f14c873580a442ce92aea2f411cd7ba7335849d20967741c2e9115a507d167578f524d9b456b323f54ac9') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-10 23:00:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 118ms (View: 96, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-10 23:00:22) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.5ms)
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:00:25) [POST]
+  Parameters: {"recaptcha_response_field"=>"", "recaptcha_challenge_field"=>"03AHJ_VuvQmnbox1gl7-Sp2TZ0w-0z_vuaNrfgiDdTsPnEFvSwL6mSen1CqbaQV-zGuf8pGpbPsAga9gznxmNQrkrSmKNOgimjlVPTsmCoRoxr1qpyfZNfi3A688bXcwBxpfkl1jSbY2YNtjXux4xpAn4Htg0FA7PfFQ", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"", "lastname"=>"", "firstname"=>"", "password"=>"[FILTERED]", "email"=>""}}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3c99245254f642e64067d51db5da8c88927424efb6249c40975238cf4028070cad4280f811c10d018b0b3d3305af054ea1362e51381e7e4a5fd24c83589bb7f8') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (3.8ms)
+Completed in 46ms (View: 25, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:01:00) [POST]
+  Parameters: {"recaptcha_response_field"=>"", "recaptcha_challenge_field"=>"03AHJ_VuvWexdX9m1e9M8I1k9FiGQoi3g1R50iKNhwj7bbhoQ10SE2jpwCqzC9Tn-USDkayCCrrZI0WQbdVaA71VHzrj8JsTNiXEJozsebhXX2EV5CE-49SHPlfIJGV8kN155_IdMo0Ha-cIiCBqs3bxoI-U4JdwdH-w", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"boopy5", "lastname"=>"5", "firstname"=>"boopy", "password"=>"[FILTERED]", "email"=>"boop@boop.com"}}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boop@boop.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'boopy5') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'a1ccb5747ef866d4de83a3a533d9286ad9f0b10a9747140bc4deacf5cb058524ee9368a013a4c3a811ecc29c02ae789ee0a6a2d24200c89e85ac58ebee98afc8') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "photo_file_size", "updated_at", "photo_file_name", "username", "role_id", "photo_content_type", "lastname", "password_salt", "photo_updated_at", "persistence_token", "firstname", "email") VALUES('049528cb6d28ec33185f7dfa223278e38d460e71e321a449e4557312c52c012f7e3907c87de82df04d1f5509a7f1f1ef64786df35292a93080bd9da90a376655', '2011-03-11 06:01:00', NULL, '2011-03-11 06:01:00', NULL, 'boopy5', 2, NULL, '5', 'ATUDuq6KlKpjHKE4AAa', NULL, 'a1ccb5747ef866d4de83a3a533d9286ad9f0b10a9747140bc4deacf5cb058524ee9368a013a4c3a811ecc29c02ae789ee0a6a2d24200c89e85ac58ebee98afc8', 'boopy', 'boop@boop.com')[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/members
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing Members::GamesController#index (for 127.0.0.1 at 2011-03-10 23:01:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"members/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'a1ccb5747ef866d4de83a3a533d9286ad9f0b10a9747140bc4deacf5cb058524ee9368a013a4c3a811ecc29c02ae789ee0a6a2d24200c89e85ac58ebee98afc8') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 17) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 17) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 17) [0m
+Rendering template within layouts/application
+Rendering members/games/index
+Rendered global/_flash (0.1ms)
+Rendered members/global/_header (1.2ms)
+Completed in 38ms (View: 3, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-10 23:01:17) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'a1ccb5747ef866d4de83a3a533d9286ad9f0b10a9747140bc4deacf5cb058524ee9368a013a4c3a811ecc29c02ae789ee0a6a2d24200c89e85ac58ebee98afc8') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'a1ccb5747ef866d4de83a3a533d9286ad9f0b10a9747140bc4deacf5cb058524ee9368a013a4c3a811ecc29c02ae789ee0a6a2d24200c89e85ac58ebee98afc8') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 98ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-10 23:01:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 41ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-10 23:01:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (3.9ms)
+Completed in 23ms (View: 13, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:01:37) [POST]
+  Parameters: {"recaptcha_response_field"=>"ran", "recaptcha_challenge_field"=>"03AHJ_Vusm9ojMt9JBKxOYwRWHQXx1kirxegXED7hZ8lT0BB_L6mqhushWr9ih_Nbh4CVQBAd55yz3g6kZ12gubAXmwGRj9v1jihz41rvwah99xWQKPrK7Lo7Hzt-kqbhJysoeTxtg4SoF1njzmQWBduoS1OxNtgmCew", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"heyhey", "lastname"=>"hey", "firstname"=>"heyhey", "password"=>"[FILTERED]", "email"=>"hey@hey.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'hey@hey.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'heyhey') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'e1ab569144812f32c9da72737b20ab50e22b652dffdd4d2f2b16bfe219cd016b22d0bc1c4409f4577fa5a3d4430c9a84350b9390a37cd6fd4f0b0db01ab3b03a') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.4ms)
+Completed in 38ms (View: 15, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:01:48) [POST]
+  Parameters: {"recaptcha_response_field"=>"trans", "recaptcha_challenge_field"=>"03AHJ_VuvCmW1ZzHy5ru0o4a8NqPuOFBd4LwAk0kXL9CEGMsd_x0rPDCHDdF_JsoV9qjJ7qJu2We929pPJuuRc3LfjAMPgcb6sWKhY_g2Znhsh3FL0lu0b1GVzuSCu2lE2JwvvMFtRh4Ww4lISr8WxLRmFPygSdrH7gg", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"heyhey", "lastname"=>"hey", "firstname"=>"heyhey", "password"=>"[FILTERED]", "email"=>"55hey@hey.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '55hey@hey.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'heyhey') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'a41756953ff516ca36e77e14a56e0928a96ef9444f511b36315765362b6fce39c51da2c267eeb30f9d6881931d7e78a629a2534a4b07ce07b5489f9611a3a5a0') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "photo_file_size", "updated_at", "photo_file_name", "username", "role_id", "photo_content_type", "lastname", "password_salt", "photo_updated_at", "persistence_token", "firstname", "email") VALUES('28b89ca40bf9570905741af98f908a2188c05136be31575bae8e0cb57b8e96ac5a509f0fb6fc5a20f2438b4f4ffda4cf01a2c3ecbe05e959027205d19a4ced59', '2011-03-11 06:01:48', NULL, '2011-03-11 06:01:48', NULL, 'heyhey', 2, NULL, 'hey', 'WIoDlvYTguUFxHjLFbU1', NULL, 'a41756953ff516ca36e77e14a56e0928a96ef9444f511b36315765362b6fce39c51da2c267eeb30f9d6881931d7e78a629a2534a4b07ce07b5489f9611a3a5a0', 'heyhey', '55hey@hey.com')[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/members
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing Members::GamesController#index (for 127.0.0.1 at 2011-03-10 23:01:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"members/games"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'a41756953ff516ca36e77e14a56e0928a96ef9444f511b36315765362b6fce39c51da2c267eeb30f9d6881931d7e78a629a2534a4b07ce07b5489f9611a3a5a0') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 18) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 18) [0m
+Rendering template within layouts/application
+Rendering members/games/index
+Rendered global/_flash (0.1ms)
+Rendered members/global/_header (1.2ms)
+Completed in 116ms (View: 3, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-10 23:01:50) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'a41756953ff516ca36e77e14a56e0928a96ef9444f511b36315765362b6fce39c51da2c267eeb30f9d6881931d7e78a629a2534a4b07ce07b5489f9611a3a5a0') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'a41756953ff516ca36e77e14a56e0928a96ef9444f511b36315765362b6fce39c51da2c267eeb30f9d6881931d7e78a629a2534a4b07ce07b5489f9611a3a5a0') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-10 23:01:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 113ms (View: 92, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-10 23:02:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 37ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-10 23:02:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.1ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:02:37) [POST]
+  Parameters: {"recaptcha_response_field"=>"", "recaptcha_challenge_field"=>"03AHJ_Vuv0vIhKEvGE0sJx1H8n6N_iLso2BgcUSICgNDjrEZbIBUQksDXm6uD3lG6ciJ-TKwVEaGy-9HWjrbTC6TlIIND1ORG36Mj0YSA7qlQ_NiHfN-KOv5CRqJegw0Uhm31P7q2oZfWQgBX_HFo4g9xLZ4HYOvG76g", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"", "lastname"=>"", "firstname"=>"", "password"=>"[FILTERED]", "email"=>""}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+
+NoMethodError (undefined method `verify_captcha' for #<UsersController:0x10387a740>):
+  app/controllers/users_controller.rb:10:in `create'
+
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:04:00) [POST]
+  Parameters: {"recaptcha_response_field"=>"", "recaptcha_challenge_field"=>"03AHJ_Vuv0vIhKEvGE0sJx1H8n6N_iLso2BgcUSICgNDjrEZbIBUQksDXm6uD3lG6ciJ-TKwVEaGy-9HWjrbTC6TlIIND1ORG36Mj0YSA7qlQ_NiHfN-KOv5CRqJegw0Uhm31P7q2oZfWQgBX_HFo4g9xLZ4HYOvG76g", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"", "lastname"=>"", "firstname"=>"", "password"=>"[FILTERED]", "email"=>""}}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.5ms)
+Completed in 451ms (View: 42, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:04:30) [POST]
+  Parameters: {"recaptcha_response_field"=>"spos", "recaptcha_challenge_field"=>"03AHJ_VutAhFRl3RkvKtxWCBZGlM7VQuagIM6kQgudK3xY3KriXn3LbBjqJjI9kkPsFUFvrxSrK1KR2-Q6tneKNW5PUWY7hIczQxBtKoj4xuWiBHInQs2uzp4eqaCHFFAK9ZqxSnccHZwbzNQD1jjIx5buFCE1XSlbaw", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.4ms)
+Completed in 364ms (View: 12, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:04:39) [POST]
+  Parameters: {"recaptcha_response_field"=>"barner alecha", "recaptcha_challenge_field"=>"03AHJ_VusXewibwWZXbH61SHgM4OwY3cHBjodsFBKa-A3wcDx2i0m68opsH7WJnaI37JUo6eoB9OE_OZQgu4npWn67WHoF1nbyHso33lia2Ckpll7DbZc9p84GhQJFazPgsg33JQw1lzzxgeeSBJK8iSZfUGODBo8hWQ", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (3.9ms)
+Completed in 363ms (View: 12, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:05:41) [POST]
+  Parameters: {"recaptcha_response_field"=>"barner alecha", "recaptcha_challenge_field"=>"03AHJ_VusXewibwWZXbH61SHgM4OwY3cHBjodsFBKa-A3wcDx2i0m68opsH7WJnaI37JUo6eoB9OE_OZQgu4npWn67WHoF1nbyHso33lia2Ckpll7DbZc9p84GhQJFazPgsg33JQw1lzzxgeeSBJK8iSZfUGODBo8hWQ", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boppy444@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'likelike') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '925c593ee905584180b64e47f1f9babe7653b6af48d0bd3ef9fda70d470a52d855c29c03f56ac65b2a2612ea1d22acd3a66803ada0bdc1f0386b3cd7d35042be') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.8ms)
+Completed in 448ms (View: 12, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:05:58) [POST]
+  Parameters: {"recaptcha_response_field"=>"knowledge fiedg", "recaptcha_challenge_field"=>"03AHJ_VuuUi-1euK2tafwOHlGb9VhOmjL6fvI_nTmm8zbragfCvMjmRD7nhxyBgXEPKLERdzdJkZMNIBxmvxM7fh5d4w-P2m-pNp9kyFkX7k_OuL-dFXs_hsqt9y4sjKSKLdRcvHHDQxvMEhqlyL5yx6DvWOpI1f4bjQ", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boppy444@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'likelike') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '974bb0c5f77c08ea61ea6b5d447f94b433e8cbe6e822e3aad607bf4e55e4ce8a2e4430a0c3d925687c40aa780cffbab4d579c54bcfcf604bd38053d3ab38834f') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.2ms)
+Completed in 371ms (View: 13, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:06:08) [POST]
+  Parameters: {"recaptcha_response_field"=>"creatrice candexi", "recaptcha_challenge_field"=>"03AHJ_VutJTGAB0iqTxbyYhbJgWQQ6KXeO11h4FYHuNDk_q1tyYI7SHrp8BnXKMOsHouFkt6rJh1Xl0sakdFArt4I8MX4vlup4Qd4AzC8eE8Ao2DL3zJwXIUZ5cFHwyAhp0_Wbjt1NWXJ6QsOsQK5vmJxFXa-_4OQXyA", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boppy444@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'likelike') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '88cb58b59ceeaf6a81c061b29f1141a40929c1454c18366de28f64bde6b6dd7a0b38e9768a96d8568767d2279f03f1d7e71f584b51695425ddad634fff0be797') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (84.6ms)
+Completed in 443ms (View: 92, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:06:16) [POST]
+  Parameters: {"recaptcha_response_field"=>"opens oftentra", "recaptcha_challenge_field"=>"03AHJ_VusQfVRmDnGwwM6DBpTEm7nHnYbd8HwZ_7cqWJhy-bWSDH1lFP5pQ7zNd_3dhU1KQdjeBtuC_tp2Ie6UDD9iEquNDr7EeZJxFv0LhGWFy4-fWZJvBCygpPAKTb31FbGIH3S6NgmVfJR8G7IXTNQr2zBNFj0xNg", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boppy444@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'likelike') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'c1464be39c540765a7b94076c826097f862371f3ef09a8ec2e5f757808659f51e0324c32a1baaaa6f30d5e4331674c8dcb17151e6c18803c95a051a50bb45ffc') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.7ms)
+Completed in 389ms (View: 14, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:06:23) [POST]
+  Parameters: {"recaptcha_response_field"=>"ngagu lob", "recaptcha_challenge_field"=>"03AHJ_VuvGUAfEvEnxjj8boWTFiF0phBiCiGZgGJr8062_PO892B5cg4_zEXzybKD2SNCk931nKBMWfA9kJRQNAhFGPVIzB5KLW8xHnVm9fzVAZtenggUh29fO8M3dXgkbNkuD4LJqShBtPg5CW6jl7FfcRNTS1Apk1w", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boppy444@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'likelike') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3bfe431f2333eabcdada09a2bb0e2c35bd2075caae2a199ec785b130dd98792b45406bcbad9d1e20e6c0d82ea02ee9ba306e70f1125e747646bb864c14edd6e2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.3ms)
+Completed in 371ms (View: 12, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:22:28) [POST]
+  Parameters: {"recaptcha_response_field"=>"kth otaxisti", "recaptcha_challenge_field"=>"03AHJ_Vuun-GZTD8-NRO5h0fvHITQpzBB3AFijv36YGfDf5QXJIg50D6HbaT2mVcLXx4NIE4t0W30AYuGu7JqvxqhAuADv_oJK1wvnnxS8tIbF6hyAPgYtxODxMh_ErLFso20WBdZ00O1brcrLYPYmYjJcicpeEq2-Jg", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boppy444@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'likelike') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'f43f37897dc730252393a9906d609b0f14c2aee2c7b6c32396e82bd68355dcb82bae5fe803aa8db690e0d4cf7f97600360ec97b62118e12aba985288b7e7b5e0') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.9ms)
+Completed in 388ms (View: 45, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:22:42) [POST]
+  Parameters: {"recaptcha_response_field"=>"kth otaxisti", "recaptcha_challenge_field"=>"03AHJ_Vuun-GZTD8-NRO5h0fvHITQpzBB3AFijv36YGfDf5QXJIg50D6HbaT2mVcLXx4NIE4t0W30AYuGu7JqvxqhAuADv_oJK1wvnnxS8tIbF6hyAPgYtxODxMh_ErLFso20WBdZ00O1brcrLYPYmYjJcicpeEq2-Jg", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (3.9ms)
+Completed in 263ms (View: 11, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:22:49) [POST]
+  Parameters: {"recaptcha_response_field"=>"theirrs less", "recaptcha_challenge_field"=>"03AHJ_VutC8C6ob--YzliqDtN2k7pnG0WQxsqt2qjxWsRpjyrJYuDZC8HK-xXiCBp2SjkWRZPZgwgKz_P_jHHyUSbkgBsGBzIxaCvVUJQmwuVT-nYlh-_0nFNe-ZhL1qhz9oEbrhL7IYYsy-RSuZgWKkVjAFUdswMyVQ", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.9ms)
+Completed in 343ms (View: 13, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:23:15) [POST]
+  Parameters: {"recaptcha_response_field"=>"theirrs less", "recaptcha_challenge_field"=>"03AHJ_VutC8C6ob--YzliqDtN2k7pnG0WQxsqt2qjxWsRpjyrJYuDZC8HK-xXiCBp2SjkWRZPZgwgKz_P_jHHyUSbkgBsGBzIxaCvVUJQmwuVT-nYlh-_0nFNe-ZhL1qhz9oEbrhL7IYYsy-RSuZgWKkVjAFUdswMyVQ", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"likelike", "lastname"=>"hey", "firstname"=>"hey", "password"=>"[FILTERED]", "email"=>"boppy444@hotmail.com"}}
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'boppy444@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'likelike') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3a8099eb03ec6ddafb67e66c92246919085e6cf2fa9f8b8d5cfff97e2d14d1245aebab45bdca37ec5fa4b1f60bcfa2617d3d4bc0e5f1364d9bdbcccd5755cc92') LIMIT 1[0m
+  [4;36;1mUser Create (24.3ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "photo_file_size", "updated_at", "photo_file_name", "username", "role_id", "photo_content_type", "lastname", "password_salt", "photo_updated_at", "persistence_token", "firstname", "email") VALUES('237feed08d0233db44915b867756ca26a9b70806df7cadb4f72454fc0879234d047c63ae55fd403615e9fddaad7e2b96f4fd35c080b2f4d0d7a4272229c1408b', '2011-03-11 06:23:15', NULL, '2011-03-11 06:23:15', NULL, 'likelike', 2, NULL, 'hey', '6rBbAz8cGdFbM7NG0X1', NULL, '3a8099eb03ec6ddafb67e66c92246919085e6cf2fa9f8b8d5cfff97e2d14d1245aebab45bdca37ec5fa4b1f60bcfa2617d3d4bc0e5f1364d9bdbcccd5755cc92', 'hey', 'boppy444@hotmail.com')[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/members
+Completed in 60ms (DB: 25) | 302 Found [http://localhost/users]
+
+
+Processing Members::GamesController#index (for 127.0.0.1 at 2011-03-10 23:23:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"members/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3a8099eb03ec6ddafb67e66c92246919085e6cf2fa9f8b8d5cfff97e2d14d1245aebab45bdca37ec5fa4b1f60bcfa2617d3d4bc0e5f1364d9bdbcccd5755cc92') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 19) [0m
+Rendering template within layouts/application
+Rendering members/games/index
+Rendered global/_flash (0.1ms)
+Rendered members/global/_header (1.5ms)
+Completed in 114ms (View: 84, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-10 23:23:18) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3a8099eb03ec6ddafb67e66c92246919085e6cf2fa9f8b8d5cfff97e2d14d1245aebab45bdca37ec5fa4b1f60bcfa2617d3d4bc0e5f1364d9bdbcccd5755cc92') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3a8099eb03ec6ddafb67e66c92246919085e6cf2fa9f8b8d5cfff97e2d14d1245aebab45bdca37ec5fa4b1f60bcfa2617d3d4bc0e5f1364d9bdbcccd5755cc92') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-10 23:23:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 37ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-10 23:23:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (4.3ms)
+Completed in 105ms (View: 14, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-10 23:23:22) [POST]
+  Parameters: {"recaptcha_response_field"=>"", "recaptcha_challenge_field"=>"03AHJ_VusPcEEoG-u0VhmvRivl3i0ee-qkahdB6Cr2dYJiSXzuBOFRutos0Xjj83Txkix5oM2Z0v0MertRQRl6ikEn65HhomdQLairyJODCw2x5XWm5HkZHYx4z3VrOfQZdlQamXJdt3UmMsVAVwUj5KnoBDmhPxx6Ug", "commit"=>"Register!", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"users", "user"=>{"photo"=>"", "password_confirmation"=>"[FILTERED]", "username"=>"", "lastname"=>"", "firstname"=>"", "password"=>"[FILTERED]", "email"=>""}}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Member') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'de06d8f5fe7df6747bbcc3e70ff86205461d16b9ecda56544c94833dbb27ed727bcc4ee74f210bcb0b096ab705a1beeb387accfb6136b763612ec0142ecd8c2f') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (3.8ms)
+Completed in 45ms (View: 24, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 01:12:13) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (3.5ms)
+Completed in 132ms (View: 101, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 01:12:17) [POST]
+  Parameters: {"commit"=>"Log In", "user_session"=>{"username"=>"jmiller", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'jmiller') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'jmiller') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/admin
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:12:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (2.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 63ms (View: 29, DB: 2) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:12:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 51ms (View: 17, DB: 2) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:12:23) [GET]
+  Parameters: {"action"=>"edit", "id"=>"48", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mUser Load (81.9ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 48) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+Completed in 125ms (View: 10, DB: 83) | 200 OK [http://localhost/admin/games/48/edit]
+
+
+Processing Admin::GamesController#update (for 127.0.0.1 at 2011-03-11 01:12:26) [PUT]
+  Parameters: {"game"=>{"rating"=>"Good", "name"=>"good", "user_id"=>"1"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "id"=>"48", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 48) [0m
+  [4;36;1mGame Update (22.1ms)[0m   [0;1mUPDATE "games" SET "updated_at" = '2011-03-11 08:12:26', "rating" = 'Good' WHERE "id" = 48[0m
+Redirected to http://localhost:3000/admin/games
+Completed in 60ms (DB: 24) | 302 Found [http://localhost/admin/games/48]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:12:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 140ms (View: 20, DB: 2) | 200 OK [http://localhost/admin/games]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:13:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 50ms (View: 17, DB: 2) | 200 OK [http://localhost/admin/games]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:13:38) [GET]
+  Parameters: {"action"=>"edit", "id"=>"49", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 49) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+Completed in 134ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/games/49/edit]
+
+
+Processing Admin::UsersController#edit (for 127.0.0.1 at 2011-03-11 01:13:41) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM "roles" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering admin/users/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.7ms)
+Completed in 37ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/users/1/edit]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 01:13:44) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 01:13:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.8ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 36ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 01:13:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (1.7ms)
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 01:13:51) [POST]
+  Parameters: {"commit"=>"Log In", "user_session"=>{"username"=>"jermille", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'jermille') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'jermille') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/admin
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:13:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mGame Load (0.5ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 55ms (View: 19, DB: 2) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:13:54) [GET]
+  Parameters: {"action"=>"edit", "id"=>"49", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 49) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+Completed in 44ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/games/49/edit]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:15:42) [GET]
+  Parameters: {"action"=>"edit", "id"=>"49", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 49) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+Completed in 127ms (View: 93, DB: 2) | 200 OK [http://localhost/admin/games/49/edit]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:15:43) [GET]
+  Parameters: {"action"=>"edit", "id"=>"49", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 49) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+Completed in 46ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/games/49/edit]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:15:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 139ms (View: 19, DB: 2) | 200 OK [http://localhost/admin/games]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:15:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"49", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 49) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.7ms)
+Completed in 45ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/games/49/edit]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 01:15:49) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 103ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 01:15:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 36ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 01:15:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (1.7ms)
+Completed in 19ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 01:15:55) [POST]
+  Parameters: {"commit"=>"Log In", "user_session"=>{"username"=>"boppy", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'boppy') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'boppy') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+Redirected to http://localhost:3000/members
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing Members::GamesController#index (for 127.0.0.1 at 2011-03-11 01:15:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"members/games"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;35;1mGame Load (0.3ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."user_id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."user_id" = 7) [0m
+Rendering template within layouts/application
+Rendering members/games/index
+Rendered global/_flash (0.1ms)
+Rendered members/global/_header (1.1ms)
+Completed in 35ms (View: 6, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing Members::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:15:57) [GET]
+  Parameters: {"action"=>"edit", "id"=>"39", "controller"=>"members/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 39) [0m
+Rendering template within layouts/application
+Rendering members/games/edit
+Rendered global/_flash (0.1ms)
+Rendered members/global/_header (1.2ms)
+Completed in 120ms (View: 9, DB: 2) | 200 OK [http://localhost/members/games/39/edit]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 01:16:01) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 01:16:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.8ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.7ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 115ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 01:16:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (1.7ms)
+Completed in 19ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 01:16:06) [POST]
+  Parameters: {"commit"=>"Log In", "user_session"=>{"username"=>"jmiller", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'jmiller') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'jmiller') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/admin
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:16:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 135ms (View: 18, DB: 2) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:16:08) [GET]
+  Parameters: {"action"=>"edit", "id"=>"44", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 44) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+Completed in 43ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/games/44/edit]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 01:16:10) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 01:16:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mGame Load (0.6ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 36ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 01:16:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (1.9ms)
+Completed in 99ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 01:16:16) [POST]
+  Parameters: {"commit"=>"Log In", "user_session"=>{"username"=>"jermille", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'jermille') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'jermille') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/admin
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:16:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mGame Load (0.5ms)[0m   [0mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 134ms (View: 101, DB: 2) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::GamesController#edit (for 127.0.0.1 at 2011-03-11 01:16:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"46", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 46) [0m
+Rendering template within layouts/application
+Rendering admin/games/edit
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.5ms)
+Completed in 43ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/games/46/edit]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 01:16:20) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 01:16:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+Rendered global/_flash (0.1ms)
+Rendered global/_header (0.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 39ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 01:17:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered global/_flash (0.1ms)
+Rendered global/_header (1.7ms)
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 01:17:24) [POST]
+  Parameters: {"commit"=>"Log In", "user_session"=>{"username"=>"jermille", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'jermille') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'jermille') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Redirected to http://localhost:3000/admin
+Completed in 102ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:17:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 58ms (View: 20, DB: 2) | 200 OK [http://localhost/admin]
+
+
+Processing Admin::GamesController#new (for 127.0.0.1 at 2011-03-11 01:17:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/games"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering admin/games/new
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+Completed in 130ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/games/new]
+
+
+Processing Admin::GamesController#create (for 127.0.0.1 at 2011-03-11 01:17:33) [POST]
+  Parameters: {"game"=>{"name"=>"bad", "user_id"=>"2"}, "commit"=>"Create", "action"=>"create", "authenticity_token"=>"m8A+9gZby5LRDcsju3+27LrqZESpx9Rc+BxDLl5nhSA=", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mGame Create (0.5ms)[0m   [0mINSERT INTO "games" ("name", "rating", "created_at", "updated_at", "user_id") VALUES('bad', NULL, '2011-03-11 08:17:33', '2011-03-11 08:17:33', 2)[0m
+Redirected to http://localhost:3000/admin
+Completed in 37ms (DB: 2) | 302 Found [http://localhost/admin/games]
+
+
+Processing Admin::GamesController#index (for 127.0.0.1 at 2011-03-11 01:17:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/games"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mGame Load (0.6ms)[0m   [0;1mSELECT * FROM "games" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+Rendering template within layouts/application
+Rendering admin/games/index
+Rendered global/_flash (0.1ms)
+Rendered admin/global/_header (1.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 140ms (View: 19, DB: 2) | 200 OK [http://localhost/admin]
