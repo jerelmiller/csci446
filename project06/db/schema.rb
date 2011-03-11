@@ -11,6 +11,25 @@
 
 ActiveRecord::Schema.define(:version => 20110309202329) do
 
+  create_table "articles", :force => true do |t|
+    t.string   "title",                       :null => false
+    t.text     "body",                        :null => false
+    t.integer  "update_count", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "author_id"
+  end
+
+  create_table "authors", :force => true do |t|
+    t.string   "name",               :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
+
   create_table "games", :force => true do |t|
     t.string   "name"
     t.string   "rating"
@@ -24,6 +43,16 @@ ActiveRecord::Schema.define(:version => 20110309202329) do
     t.datetime "updated_at"
     t.string   "name"
   end
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "users", :force => true do |t|
     t.string   "username"
